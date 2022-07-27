@@ -1,0 +1,10 @@
+$mainColor: #15023a;
+$secondColor: #dc143c;
+
+$width: 768px;
+
+@mixin computer {
+   @media (min-width: #{$width}) {
+      @content;
+   }
+}
