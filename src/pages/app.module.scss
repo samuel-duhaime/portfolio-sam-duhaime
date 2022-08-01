@@ -1,24 +1,24 @@
-.app {
-    height: 100vh;
+// .app {
+//     height: 100vh;
 
-    .sections{
-        width: 100%;
-        height: calc(100vh - 70px);
-        // background-color: lightsalmon;
-        position: relative;
-        top: 70px;
-        scroll-behavior: smooth; // Aller lentement au bon endroit
-        scroll-snap-type: y mandatory;
-        scrollbar-width: none; // For firefox
-        &::-webkit-scrollbar{
-            display: none;
-        }
+//     .sections{
+//         width: 100%;
+//         height: calc(100vh - 70px);
+//         // background-color: lightsalmon;
+//         position: relative;
+//         top: 70px;
+//         scroll-behavior: smooth; // Aller lentement au bon endroit
+//         scroll-snap-type: y mandatory;
+//         scrollbar-width: none; // For firefox
+//         &::-webkit-scrollbar{
+//             display: none;
+//         }
 
-        // Each div after
-        .section {
-            width: 100vw;
-            height: calc(100vh - 70px);
-            scroll-snap-align: start; // Snap scroll when moving
-        }
-    }
-}
+//         // Each div after
+//         .section {
+//             width: 100vw;
+//             height: calc(100vh - 70px);
+//             scroll-snap-align: start; // Snap scroll when moving
+//         }
+//     }
+// }

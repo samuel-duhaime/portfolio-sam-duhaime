@@ -1,0 +1,154 @@
+/* Tout le site */
+* {
+   font-size: 100%;
+   // font-family: $secondFontFamily;
+   box-sizing: border-box;
+   line-height: 150%;
+}
+
+/* Mettre la logique pour le dark mode */
+body {
+   background-color: var(--darkModeBackgroundColor);
+   color: var(--darkModeTextColor);
+   transition: all 0.3s ease;
+}
+
+// /* Heading 1 to 4 */
+// h1,
+// h2,
+// h3,
+// h4 {
+//    font-family: $firstFontFamily;
+//    font-weight: 700;
+//    color: $firstColor;
+// }
+
+// /* Heading 1 */
+// h1 {
+//    font-size: 1.25rem;
+//    margin: 15px 0;
+
+//    @include forComputer {
+//       font-size: 2rem;
+//    }
+// }
+
+// /* Heading 2 */
+// h2 {
+//    font-size: 1.125rem;
+
+//    @include forComputer {
+//       font-size: 1.5rem;
+//    }
+// }
+
+// /* Heading 3 */
+// h3 {
+//    font-size: 1rem;
+
+//    @include forComputer {
+//       font-size: 1rem;
+//    }
+// }
+
+// /* link */
+// a {
+//    text-decoration: none;
+//    color: inherit;
+// }
+
+// /* Mettre une description en bas aux icônes */
+// [bottooltip] {
+//    position: relative;
+
+//    &:is(:hover, :focus)::before {
+//       content: attr(bottooltip);
+//       position: absolute;
+//       width: max-content;
+//       min-width: 3.125rem;
+//       max-width: 20rem;
+//       background-color: white;
+//       text-align: center;
+//       line-height: 1.25rem;
+//       color: black;
+//       font-size: 1rem;
+//       font-weight: 400;
+//       padding: 0.5rem;
+//       top: 100%;
+//       left: 50%;
+//       border-radius: 0.625rem;
+//       white-space: nowrap;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//       box-shadow: $boxShadow;
+//       -webkit-box-shadow: $boxShadow;
+//       -moz-box-shadow: $boxShadow;
+//       -webkit-appearance: none;
+//       z-index: 1000;
+//       transform: translate(-50%, 0.625rem);
+//    }
+// }
+
+// /* Mettre une description en haut aux icônes */
+// [toptooltip] {
+//    position: relative;
+
+//    &:is(:hover, :focus)::before {
+//       content: attr(toptooltip);
+//       position: absolute;
+//       width: max-content;
+//       min-width: 3.125rem;
+//       max-width: 20rem;
+//       background-color: white;
+//       text-align: center;
+//       line-height: 1.25rem;
+//       color: black;
+//       font-size: 1rem;
+//       font-weight: 400;
+//       padding: 0.5rem;
+//       bottom: 100%;
+//       left: 50%;
+//       border-radius: 0.625rem;
+//       white-space: nowrap;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//       box-shadow: $boxShadow;
+//       -webkit-box-shadow: $boxShadow;
+//       -moz-box-shadow: $boxShadow;
+//       -webkit-appearance: none;
+//       z-index: 1000;
+//       transform: translate(-50%, -0.3125rem);
+//    }
+// }
+
+// /* Mettre une description à droite des icônes */
+// [righttooltip] {
+//    position: relative;
+
+//    &:is(:hover, :focus)::before {
+//       content: attr(righttooltip);
+//       position: absolute;
+//       width: max-content;
+//       min-width: 3.125rem;
+//       max-width: 20rem;
+//       background-color: white;
+//       text-align: center;
+//       line-height: 1.25rem;
+//       color: black;
+//       font-weight: 400;
+//       font-size: 1rem;
+//       padding: 0.5rem;
+//       top: 50%;
+//       left: 50%;
+//       border-radius: 0.625rem;
+//       white-space: nowrap;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//       box-shadow: $boxShadow;
+//       -webkit-box-shadow: $boxShadow;
+//       -moz-box-shadow: $boxShadow;
+//       -webkit-appearance: none;
+//       z-index: 1000;
+//       transform: translate(1.25rem, -50%);
+//    }
+// }

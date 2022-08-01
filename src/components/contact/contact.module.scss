@@ -1,82 +1,83 @@
-@import "../../styles/global.scss";
+@import "../../styles/_1-variables.module.scss";
+@import "../../styles/_2-mixins.module.scss";
 
 .contact {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
+   background-color: var(--darkModeBackgroundColor);
+   display: flex;
+   flex-direction: column;
 
-    @include computer {
-        flex-direction: unset;
-    }
+   @include computer {
+      flex-direction: unset;
+   }
 
-    .left {
-        flex: 1;
-        overflow: hidden;
+   .left {
+      flex: 1;
+      overflow: hidden;
 
-        img {
-            height: 100%;
-        }
-    }
+      img {
+         height: 100%;
+      }
+   }
 
-    .right {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+   .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-        h2 {
-            font-size: 30px;
-        }
+      h2 {
+         font-size: 30px;
+      }
 
-        form {
-            width: 70%;
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+      form {
+         width: 70%;
+         height: 70%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-around;
 
-            input {
-                width: 200px;
-                height: 20px;
-                font-size: 14px;
+         input {
+            width: 200px;
+            height: 20px;
+            font-size: 14px;
 
-                @include computer {
-                    width: 300px;
-                    height: 30px;
-                }
+            @include computer {
+               width: 300px;
+               height: 30px;
             }
+         }
 
-            textarea {
-                width: 200px;
-                height: 100px;
-                font-size: 14px;
+         textarea {
+            width: 200px;
+            height: 100px;
+            font-size: 14px;
 
-                @include computer {
-                    width: 300px;
-                    height: 200px;
-                }
+            @include computer {
+               width: 300px;
+               height: 200px;
             }
+         }
 
-            button {
-                width: 150px;
-                height: 30px;
-                color: white;
-                background-color: crimson;
-                border: none;
-                border-radius: 10px;
-                font-weight: 300px;
-                cursor: pointer;
+         button {
+            width: 150px;
+            height: 30px;
+            color: var(--darkModeBackgroundColor);
+            background-color: $secondColor;
+            border: none;
+            border-radius: 10px;
+            font-weight: 300px;
+            cursor: pointer;
 
-                &:focus {
-                    outline: none;
-                }
+            &:focus {
+               outline: none;
             }
+         }
 
-            span {
-                color: green;
-            }
-        }
-    }
+         span {
+            color: green;
+         }
+      }
+   }
 }

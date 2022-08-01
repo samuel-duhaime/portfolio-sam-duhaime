@@ -1,0 +1,38 @@
+.cv {
+   max-width: 1200px;
+   height: 2000px;
+   padding: 20px;
+   margin: 0 auto;
+
+   .sections {
+      display: flex;
+      flex-direction: column;
+
+      .section {
+         display: flex;
+         width: 100%;
+         margin: 20px 0;
+
+         .left {
+            width: 185px;
+
+            h3 {
+               position: sticky;
+               top: 90px;
+            }
+         }
+
+         .right {
+            width: calc(100% - 185px - 40px);
+
+            .description {
+               .descriptionTitre {
+                  display: flex;
+                  justify-content: space-between;
+               }
+               
+            }
+         }
+      }
+   }
+}

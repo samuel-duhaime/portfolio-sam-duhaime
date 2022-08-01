@@ -1,0 +1,19 @@
+.fontAwesomeDiv {
+   display: flex;
+   width: 100%;
+
+   .iconDiv {
+      display: flex;
+      justify-content: center;
+      width: 1.875rem;
+      margin-right: .625rem;
+
+      svg {
+         font-size: 1.25rem;
+      }
+   }
+
+   .texteDiv {
+      width: calc(100% - 1.875rem - .625rem);
+   }
+}

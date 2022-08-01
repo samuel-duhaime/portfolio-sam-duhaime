@@ -1,78 +1,105 @@
-@import "../../styles/global.scss";
+@import "../../styles/_1-variables.module";
 
 .topbar {
-    width: 100%;
-    height: 70px;
-    background-color: white;
-    color: $mainColor;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    transition: all 0.5s ease;
+   width: 100%;
+   height: 70px;
+   padding: 0 20px;
+   position: fixed;
+   top: 0;
+   z-index: 3;
+   transition: all 0.3s ease;
+   background-color: var(--darkModeBackgroundColor);
 
-    .wrapper {
-        padding: 0 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+   .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-        .left {
-            display: flex;
-            align-items: center;
+      .left {
+         display: flex;
+         align-items: center;
 
-            .logo {
-                font-size: 40px;
-                font-weight: 700px;
-                text-decoration: none;
-                color: inherit;
-                margin-right: 40px;
+         .logoText {
+            font-size: 40px;
+            font-weight: 700px;
+            text-decoration: none;
+            color: inherit;
 
-                .red {
-                    font-size: 46px;
-                    color: $secondColor;
-                }
+            .red {
+               font-size: 46px;
+               color: $secondColor;
             }
-        }
+         }
+      }
 
-        .right {
-            
-            .hamburger {
-                width: 40px;
-                height: 32px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                cursor: pointer;
+      .right {
+         display: flex;
 
-                span {
-                    width: 100%;
-                    height: 3px;
-                    background-color: $mainColor;
-                    transform-origin: left;
-                    transition: all 2s ease;
-                }
-            }
-        }
-    }
+         .langue {
+            margin-right: 16px;
 
-    &.active {
-        background-color: $mainColor;
-        color: white;
-
-        .hamburger {
             span {
-                &:first-child {
-                    background-color: white;
-                    transform: rotate(45deg);
-                }
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-                &:last-child {
-                    background-color: white;
-                    transform: rotate(-45deg);
-                }
+               cursor: pointer;
+
+               &.active {
+                  text-decoration: underline;
+               }
+
+               &:hover,
+               &:focus {
+                  color: blue;
+               }
             }
-        }
-    }
+         }
+
+         .displayIcone {
+            margin-right: 16px;
+            font-size: 25px;
+            cursor: pointer;
+
+            &:hover,
+            &:focus {
+               color: blue;
+            }
+         }
+
+         .hamburger {
+            width: 40px;
+            height: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+
+            span {
+               width: 100%;
+               height: 3px;
+               background-color: var(--darkModeTextColor);
+               transform-origin: left;
+               transition: all 0.3s ease;
+            }
+         }
+      }
+   }
+
+   &.active {
+      background-color: $mainColor;
+      color: white;
+
+      .hamburger {
+         span {
+            &:first-child {
+               background-color: white;
+               transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+               opacity: 0;
+            }
+            &:last-child {
+               background-color: white;
+               transform: rotate(-45deg);
+            }
+         }
+      }
+   }
 }

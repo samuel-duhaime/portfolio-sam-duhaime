@@ -1,0 +1,82 @@
+[
+   {
+      "id": 1,
+      "textArray": [
+         { "textId": 1, "text": "import ", "color": "hotPink" },
+         { "textId": 2, "text": "express ", "color": "turquoise" },
+         { "textId": 3, "text": "from ", "color": "hotPink" },
+         { "textId": 4, "text": "\"express\"", "color": "greenYellow" },
+         { "textId": 5, "text": ";", "color": "white" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 2,
+      "textArray": [
+         { "textId": 1, "text": "const ", "color": "hotPink" },
+         { "textId": 2, "text": "app ", "color": "turquoise" },
+         { "textId": 3, "text": "= ", "color": "orange" },
+         { "textId": 4, "text": "express()", "color": "yellow" },
+         { "textId": 5, "text": ";", "color": "white" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 3,
+      "textArray": [{ "textId": 1, "text": "", "color": "" }],
+      "margin": "0"
+   },
+   {
+      "id": 4,
+      "textArray": [
+         { "textId": 1, "text": "app", "color": "orange" },
+         { "textId": 2, "text": ".", "color": "white" },
+         { "textId": 3, "text": "get(", "color": "yellow" },
+         { "textId": 4, "text": "\"/node\"", "color": "greenYellow" },
+         { "textId": 5, "text": ", ", "color": "white" },
+         { "textId": 6, "text": "(", "color": "hotPink" },
+         { "textId": 7, "text": "req, res", "color": "turquoise" },
+         { "textId": 8, "text": ") => {", "color": "hotPink" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 5,
+      "textArray": [
+         { "textId": 1, "text": "res", "color": "orange" },
+         { "textId": 2, "text": ".", "color": "white" },
+         { "textId": 3, "text": "send", "color": "yellow" },
+         { "textId": 4, "text": "(", "color": "blue" },
+         { "textId": 5, "text": "\"Depuis plus d'un an, je crée des serveurs sécuritaires et performants avec NodeJs.\"", "color": "white" },
+         { "textId": 6, "text": ")", "color": "blue" },
+         { "textId": 7, "text": ", ", "color": "white" }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 6,
+      "textArray": [
+         { "textId": 1, "text": "}", "color": "hotPink" },
+         { "textId": 2, "text": ")", "color": "yellow" },
+         { "textId": 3, "text": ";", "color": "white" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 7,
+      "textArray": [{ "textId": 1, "text": "", "color": "" }],
+      "margin": "0"
+   },
+   {
+      "id": 8,
+      "textArray": [
+         { "textId": 1, "text": "app", "color": "orange" },
+         { "textId": 2, "text": ".", "color": "white" },
+         { "textId": 3, "text": "listen(", "color": "yellow" },
+         { "textId": 4, "text": "port", "color": "turquoise" },
+         { "textId": 5, "text": ")", "color": "yellow" },
+         { "textId": 6, "text": ";", "color": "white" }
+      ],
+      "margin": "0"
+   }
+]

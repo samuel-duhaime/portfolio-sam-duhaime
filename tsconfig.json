@@ -21,6 +21,6 @@
       "jsx": "preserve",
       "baseUrl": ".",
    },
-   "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts"], // Inclure durant la compilation
+   "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", "src/components/intro/Accueil.jsx", "src/pages/index.tsx", "src/components/conteneur/context/ContextConteneur.tsx", "src/components/conteneur/codeConteneur/CodeConteneur.tsx"], // Inclure durant la compilation
    "exclude": ["node_modules", "build/**/*"] // Exclure durant la compilation
 }

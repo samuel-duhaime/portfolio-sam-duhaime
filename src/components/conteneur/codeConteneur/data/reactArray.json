@@ -1,0 +1,79 @@
+[
+   {
+      "id": 1,
+      "textArray": [
+         { "textId": 1, "text": "import ", "color": "hotPink" },
+         { "textId": 2, "text": "{ ", "color": "yellow" },
+         { "textId": 3, "text": "React ", "color": "turquoise" },
+         { "textId": 4, "text": "} ", "color": "yellow" },
+         { "textId": 5, "text": "from ", "color": "hotPink" },
+         { "textId": 6, "text": "\"react\"", "color": "greenYellow" },
+         { "textId": 7, "text": ";", "color": "white" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 2,
+      "textArray": [
+         { "textId": 1, "text": "import ", "color": "hotPink" },
+         { "textId": 2, "text": "{ ", "color": "yellow" },
+         { "textId": 3, "text": "NextJs ", "color": "turquoise" },
+         { "textId": 4, "text": "} ", "color": "yellow" },
+         { "textId": 5, "text": "from ", "color": "hotPink" },
+         { "textId": 6, "text": "\"next-js\"", "color": "greenYellow" },
+         { "textId": 7, "text": ";", "color": "white" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 3,
+      "textArray": [{ "textId": 1, "text": "", "color": "" }],
+      "margin": "0"
+   },
+   {
+      "id": 4,
+      "textArray": [
+         { "textId": 1, "text": "<", "color": "white" },
+         { "textId": 2, "text": "React", "color": "orange" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 5,
+      "textArray": [
+         { "textId": 1, "text": "framework", "color": "yellow" },
+         { "textId": 2, "text": "=", "color": "orange" },
+         { "textId": 3, "text": "{", "color": "yellow" },
+         { "textId": 4, "text": "NextJs", "color": "turquoise" },
+         { "textId": 5, "text": "}", "color": "yellow" }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 6,
+      "textArray": [
+         { "textId": 1, "text": "experience", "color": "yellow" },
+         { "textId": 2, "text": "=", "color": "orange" },
+         {
+            "textId": 3,
+            "text": "\"J'utilise React et NextJs depuis plus de 7 mois.\"",
+            "color": "white"
+         }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 7,
+      "textArray": [
+         { "textId": 1, "text": "bonus", "color": "yellow" },
+         { "textId": 2, "text": "=", "color": "orange" },
+         { "textId": 3, "text": "\"Je peux rendre votre application web rapide et interactive.\"", "color": "white" }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 8,
+      "textArray": [{ "textId": 1, "text": "/>", "color": "white" }],
+      "margin": "0"
+   }
+]

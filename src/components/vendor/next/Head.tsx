@@ -1,7 +1,7 @@
 import HeadNext from "next/head";
 
 type TypeProps = {
-   title: string;
+   title?: string;
    description: string;
 };
 
@@ -9,24 +9,55 @@ export default function Head({ title, description }: TypeProps) {
    return (
       <HeadNext>
          {/* Meta */}
-         <meta name="viewport" content="width=device-width, initial-scale=1" />
-         <meta name="theme-color" content="#24305e" />
-         <meta name="description" content={description} />
-         <meta property="og:title" content="Enseigner tout simplement." />
+         <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+         />
+         <meta
+            name="theme-color"
+            content="#15023a"
+         />
+         <meta
+            name="description"
+            content={description}
+         />
+         <meta
+            property="og:title"
+            content="Sam Duhaime | Développeur web"
+         />
          <meta
             property="og:description"
-            content="Trouvez, téléchargez, partagez et vendez du matériel
-                  pédagogique francophone avec Écolio."
+            content="Portfolio de Sam Duhaime, développeur web à Montréal, Québec, Canada. Réalisez une application web."
          />
-         <meta property="og:image" content="https://ecolio.ca/assets/images/logo/ecolio-meta.png" />
-         <meta property="og:image:width" content="1200" />
-         <meta property="og:image:height" content="630" />
-         <meta property="og:type" content="website" />
-         <meta property="og:url" content="https://ecolio.ca" />
-         <meta property="og:locale" content="fr_CA" />
+         {/* TODO: Modifier */}
+         <meta
+            property="og:image"
+            content="https://ecolio.ca/assets/images/logo/ecolio-meta.png"
+         />
+         <meta
+            property="og:image:width"
+            content="1200"
+         />
+         <meta
+            property="og:image:height"
+            content="630"
+         />
+         <meta
+            property="og:type"
+            content="website"
+         />
+         {/* TODO: Modifier */}
+         <meta
+            property="og:url"
+            content="https://samduhaime.com"
+         />
+         <meta
+            property="og:locale"
+            content="fr_CA"
+         />
 
          {/* Titre */}
-         <title>{title ? "Écolio | " + title : "Écolio"} </title>
+         <title>{title ? title + " | Sam Duhaime" : "Sam Duhaime | Développeur web à Montréal"}</title>
       </HeadNext>
    );
 }

@@ -1,0 +1,291 @@
+//REF https://github.com/resetercss/reseter.css 
+
+// Everything
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+   padding: 0;
+   margin: 0;
+}
+
+/* html tag */
+html {
+   line-height: 1.15;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+/* main tag */
+main {
+   display: block;
+}
+
+/* header 1 tag */
+h1 {
+   font-size: 2em;
+   margin: 0.67em 0;
+}
+
+/* paragraphs margin top */
+p+p {
+   margin-top: 1rem;
+}
+
+/* link tag */
+a {
+   background-color: transparent;
+}
+
+/* title properties of abbr tag */
+abbr[title] {
+   -webkit-text-decoration: underline dotted;
+   text-decoration: underline dotted;
+}
+
+/* code kbd samp and pre tags */
+code,
+kbd,
+samp,
+pre {
+   font-family: monospace, monospace;
+   font-size: 1em;
+}
+
+/* sub and sup tag */
+sub,
+sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+}
+
+/* sub tag */
+sub {
+   bottom: -0.25em;
+}
+
+/* sup tag */
+sup {
+   top: -0.5em;
+}
+
+/* button input optgroup select and textarea tags */
+button,
+input,
+optgroup,
+select,
+textarea {
+   line-height: inherit;
+   border: 0.0625rem solid currentColor;
+}
+
+/* button tag */
+button {
+   overflow: visible;
+   text-transform: none;
+}
+
+/* button with properties tag */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+   -webkit-appearance: button;
+   padding: 0.0625rem 0.375rem;
+}
+
+/* input tag */
+input {
+   overflow: visible;
+}
+
+/* input and textarea tag */
+input,
+textarea {
+   padding: 0.0625rem;
+}
+
+/* fieldset tag */
+fieldset {
+   border: 0.0625rem solid currentColor;
+   margin: 0 0.125rem;
+}
+
+/* legend tag */
+legend {
+   color: inherit;
+   display: table;
+   max-width: 100%;
+   white-space: normal;
+}
+
+/* progress tag */
+progress {
+   display: inline-block;
+   vertical-align: baseline;
+}
+
+/* select tag */
+select {
+   text-transform: none;
+}
+
+/* textarea tag */
+textarea {
+   overflow: auto;
+   vertical-align: top;
+}
+
+/* type seach */
+[type=search] {
+   -webkit-appearance: textfield;
+   outline-offset: -0.125rem;
+}
+
+/* type color */
+[type=color] {
+   background: inherit;
+}
+
+/* webkit */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+   height: auto;
+}
+
+/* webkit */
+::-webkit-input-placeholder {
+   color: inherit;
+   opacity: 0.5;
+}
+
+/* webkit */
+::-webkit-search-decoration,
+::-webkit-file-upload-button {
+   -webkit-appearance: button;
+   font: inherit;
+}
+
+/* moz */
+::-moz-focus-inner {
+   border: 0;
+}
+
+/* moz */
+:-moz-focusring {
+   outline: 0.0625rem dotted ButtonText;
+}
+
+/* moz */
+:-moz-ui-invalid {
+   box-shadow: none;
+}
+
+/* hr tag */
+hr {
+   box-sizing: content-box;
+   height: 0;
+   color: inherit;
+   overflow: visible;
+}
+
+/* dl ol ul tags */
+dl,
+ol,
+ul {
+   margin: 1em 0;
+}
+
+/* ol ul dl tags */
+ol ol,
+ol ul,
+ol dl,
+ul ol,
+ul ul,
+ul dl,
+dl ol,
+dl ul,
+dl dl {
+   margin: 0;
+}
+
+/* b strong tag */
+b,
+strong {
+   font-weight: bolder;
+}
+
+/* audio and video tags */
+audio,
+video {
+   display: inline-block;
+}
+
+/* audio tag */
+audio:not([controls]) {
+   display: none;
+   height: 0;
+}
+
+/* img tag */
+img {
+   border: 0;
+}
+
+/* svg tag */
+svg:not(:root) {
+   overflow: hidden;
+}
+
+/* table tag */
+table {
+   text-indent: 0;
+   border-color: inherit;
+}
+
+/* details tag */
+details {
+   display: block;
+}
+
+/* dialog tag */
+dialog {
+   background-color: inherit;
+   border: solid;
+   color: inherit;
+   display: block;
+   height: fit-content;
+   left: 0;
+   margin: auto;
+   padding: 1em;
+   position: absolute;
+   right: 0;
+   width: fit-content;
+}
+
+/* dialot tag */
+dialog:not([open]) {
+   display: none;
+}
+
+/* summary tag */
+summary {
+   display: list-item;
+}
+
+/* canvas tag */
+canvas {
+   display: inline-block;
+}
+
+/* template tag */
+template {
+   display: none;
+}
+
+/* hidden properties */
+[hidden] {
+   display: none;
+}

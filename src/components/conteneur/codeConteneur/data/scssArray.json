@@ -1,0 +1,87 @@
+[
+   {
+      "id": 1,
+      "textArray": [{ "textId": 1, "text": ".samDuhaime {", "color": "yellow" }],
+      "margin": "0"
+   },
+   {
+      "id": 2,
+      "textArray": [
+         { "textId": 1, "text": "font-size: ", "color": "red" },
+         { "textId": 2, "text": "16px", "color": "orange" },
+         { "textId": 3, "text": ";", "color": "white" }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 3,
+      "textArray": [{ "textId": 1, "text": "", "color": "white" }],
+      "margin": "15px"
+   },
+   {
+      "id": 4,
+      "textArray": [
+         { "textId": 1, "text": "&", "color": "turquoise" },
+         { "textId": 2, "text": "::before ", "color": "yellow" },
+         { "textId": 3, "text": "{", "color": "hotPink" }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 5,
+      "textArray": [
+         { "textId": 1, "text": "content", "color": "red" },
+         { "textId": 2, "text": ": ", "color": "white" },
+         {
+            "textId": 3,
+            "text": "\"J'apprends CSS et SCSS depuis plus de 18 mois.\"",
+            "color": "white"
+         },
+         { "textId": 4, "text": ";", "color": "white" }
+      ],
+      "margin": "30px"
+   },
+   {
+      "id": 6,
+      "textArray": [{ "textId": 1, "text": "}", "color": "hotPink" }],
+      "margin": "15px"
+   },
+   {
+      "id": 7,
+      "textArray": [{ "textId": 1, "text": "", "color": "white" }],
+      "margin": "15px"
+   },
+   {
+      "id": 8,
+      "textArray": [
+         { "textId": 1, "text": "&", "color": "turquoise" },
+         { "textId": 2, "text": "::after ", "color": "yellow" },
+         { "textId": 3, "text": "{", "color": "hotPink" }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 9,
+      "textArray": [
+         { "textId": 1, "text": "content", "color": "red" },
+         { "textId": 2, "text": ": ", "color": "white" },
+         {
+            "textId": 3,
+            "text": "\"Je peux concevoir une application web magnifique et moderne.\"",
+            "color": "white"
+         },
+         { "textId": 4, "text": ";", "color": "white" }
+      ],
+      "margin": "30px"
+   },
+   {
+      "id": 10,
+      "textArray": [{ "textId": 1, "text": "}", "color": "hotPink" }],
+      "margin": "15px"
+   },
+   {
+      "id": 11,
+      "textArray": [{ "textId": 1, "text": "}", "color": "yellow" }],
+      "margin": "0"
+   }
+]

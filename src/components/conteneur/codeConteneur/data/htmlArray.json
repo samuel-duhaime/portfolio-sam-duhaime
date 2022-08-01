@@ -1,0 +1,90 @@
+[
+   {
+      "id": 1,
+      "textArray": [
+         { "textId": 1, "text": "<", "color": "white" },
+         { "textId": 2, "text": "html", "color": "red" },
+         { "textId": 3, "text": ">", "color": "white" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 2,
+      "textArray": [
+         { "textId": 1, "text": "<", "color": "white" },
+         { "textId": 2, "text": "body", "color": "red" },
+         { "textId": 3, "text": ">", "color": "white" }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 3,
+      "textArray": [
+         { "textId": 1, "text": "<", "color": "white" },
+         { "textId": 2, "text": "p", "color": "red" },
+         { "textId": 3, "text": ">", "color": "white" }
+      ],
+      "margin": "30px"
+   },
+   {
+      "id": 4,
+      "textArray": [{ "textId": 1, "text": "J'ai plus de 18 mois d'expérience avec HTML.", "color": "white" }],
+      "margin": "45px"
+   },
+   {
+      "id": 5,
+      "textArray": [
+         { "textId": 1, "text": "</", "color": "white" },
+         { "textId": 2, "text": "p", "color": "red" },
+         { "textId": 3, "text": ">", "color": "white" }
+      ],
+      "margin": "30px"
+   },
+   {
+      "id": 6,
+      "textArray": [
+         { "textId": 1, "text": "<", "color": "white" },
+         { "textId": 2, "text": "p", "color": "red" },
+         { "textId": 3, "text": ">", "color": "white" }
+      ],
+      "margin": "30px"
+   },
+   {
+      "id": 7,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": "Je comprends l'importance d'avoir une structure la plus SEO possible.",
+            "color": "white"
+         }
+      ],
+      "margin": "45px"
+   },
+   {
+      "id": 8,
+      "textArray": [
+         { "textId": 1, "text": "</", "color": "white" },
+         { "textId": 2, "text": "p", "color": "red" },
+         { "textId": 3, "text": ">", "color": "white" }
+      ],
+      "margin": "30px"
+   },
+   {
+      "id": 9,
+      "textArray": [
+         { "textId": 1, "text": "</", "color": "white" },
+         { "textId": 2, "text": "body", "color": "red" },
+         { "textId": 3, "text": ">", "color": "white" }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 10,
+      "textArray": [
+         { "textId": 1, "text": "</", "color": "white" },
+         { "textId": 2, "text": "html", "color": "red" },
+         { "textId": 3, "text": ">", "color": "white" }
+      ],
+      "margin": "0"
+   }
+]

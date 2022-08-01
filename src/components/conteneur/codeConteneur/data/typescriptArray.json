@@ -1,0 +1,185 @@
+[
+   {
+      "id": 1,
+      "textArray": [
+         { "textId": 1, "text": "type ", "color": "hotPink" },
+         { "textId": 2, "text": "samuelDuhaimeProps ", "color": "yellow" },
+         { "textId": 3, "text": "= ", "color": "orange" },
+         { "textId": 4, "text": "{ ", "color": "yellow" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 2,
+      "textArray": [
+         { "textId": 1, "text": "experienceJavaScript", "color": "turquoise" },
+         { "textId": 2, "text": ": ", "color": "orange" },
+         { "textId": 3, "text": "number;", "color": "white" }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 3,
+      "textArray": [
+         { "textId": 1, "text": "experienceTypeScript", "color": "turquoise" },
+         { "textId": 2, "text": ": ", "color": "orange" },
+         { "textId": 3, "text": "number;", "color": "white" }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 4,
+      "textArray": [
+         { "textId": 1, "text": "}", "color": "yellow" },
+         { "textId": 2, "text": ";", "color": "white" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 5,
+      "textArray": [{ "textId": 1, "text": "", "color": "" }],
+      "margin": "0"
+   },
+   {
+      "id": 6,
+      "textArray": [
+         { "textId": 1, "text": "export default function ", "color": "hotPink" },
+         { "textId": 2, "text": "samuelDuhaime(", "color": "yellow" },
+         { "textId": 3, "text": "{", "color": "hotPink" },
+         { "textId": 4, "text": "experienceJavaScript ", "color": "turquoise" },
+         { "textId": 5, "text": "= 1", "color": "orange" },
+         { "textId": 6, "text": ", ", "color": "white" },
+         { "textId": 7, "text": "experienceTypeScript ", "color": "turquoise" },
+         { "textId": 8, "text": "= 1", "color": "orange" },
+         { "textId": 9, "text": "}", "color": "hotPink" },
+         { "textId": 10, "text": ": ", "color": "orange" },
+         { "textId": 11, "text": "samuelDuhaimeProps) {", "color": "yellow" }
+      ],
+      "margin": "0"
+   },
+   {
+      "id": 7,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": "",
+            "color": ""
+         }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 8,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": "/* Je programme avec JavaScript et TypeScript depuis plus d'un an.",
+            "color": "white"
+         }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 9,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": "Je peux rendre votre application fiable et captivante. */",
+            "color": "white"
+         }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 10,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": "return (",
+            "color": "hotPink"
+         }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 10,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": "experienceJavascript ",
+            "color": "turquoise"
+         },
+         {
+            "textId": 2,
+            "text": "+",
+            "color": "orange"
+         }
+      ],
+      "margin": "30px"
+   },
+   {
+      "id": 11,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": "\" an d'expérience avec JavaScript et \" ",
+            "color": "greenYellow"
+         }
+      ],
+      "margin": "30px"
+   },
+   {
+      "id": 12,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": "experienceTypeScript ",
+            "color": "turquoise"
+         },
+         {
+            "textId": 2,
+            "text": "+",
+            "color": "orange"
+         }
+      ],
+      "margin": "30px"
+   },
+   {
+      "id": 13,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": "\" an d'expérience avec TypeScript et \" ",
+            "color": "greenYellow"
+         }
+      ],
+      "margin": "30px"
+   },
+   {
+      "id": 14,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": ")",
+            "color": "hotPink"
+         },
+         {
+            "textId": 2,
+            "text": ";",
+            "color": "white"
+         }
+      ],
+      "margin": "15px"
+   },
+   {
+      "id": 15,
+      "textArray": [
+         {
+            "textId": 1,
+            "text": "}",
+            "color": "yellow"
+         }
+      ],
+      "margin": "0"
+   }
+]

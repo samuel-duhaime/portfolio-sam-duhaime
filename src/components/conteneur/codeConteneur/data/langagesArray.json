@@ -1,0 +1,22 @@
+[
+   {
+      "id": 1,
+      "text": "React"
+   },
+   {
+      "id": 2,
+      "text": "TypeScript"
+   },
+   {
+      "id": 3,
+      "text": "HTML"
+   },
+   {
+      "id": 4,
+      "text": "SCSS"
+   },
+   {
+      "id": 5,
+      "text": "Node"
+   }
+]
