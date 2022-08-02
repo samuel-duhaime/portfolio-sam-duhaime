@@ -10,19 +10,19 @@ export default function Menu({ menuOpen, setMenuOpen }: MenuProps) {
       <div className={Styles.menu + (menuOpen ? " " + Styles.active : "")}>
          <ul>
             <li onClick={() => setMenuOpen(false)}>
-               <a href="/#">Introduction</a>
+               <a href="/#">Intro</a>
             </li>
             <li onClick={() => setMenuOpen(false)}>
-               <a href="/#projets">Projets</a>
+               <a href="/#Projets">Projets</a>
             </li>
             <li onClick={() => setMenuOpen(false)}>
-               <a href="/#cv">CV</a>
+               <a href="/#CV">CV</a>
             </li>
             <li onClick={() => setMenuOpen(false)}>
-               <a href="/#contact">Contact</a>
+               <a href="/#Contact">Contact</a>
             </li>
             <li onClick={() => setMenuOpen(false)}>
-               <a href="/#robotChat">Robot chat</a>
+               <a href="/#ChatBot">ChatBot</a>
             </li>
          </ul>
       </div>

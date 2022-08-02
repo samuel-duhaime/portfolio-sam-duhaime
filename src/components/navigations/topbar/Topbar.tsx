@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "src/hooks/useContext/AppContext";
-import FontAwesomeIcon from "../vendor/fontAwesome/fontAwesomeIcon/FontAwesomeIcon";
+import FontAwesomeIcon from "../../vendor/fontAwesome/fontAwesomeIcon/FontAwesomeIcon";
 import Styles from "./topbar.module.scss";
 
 type TopBarProps = {

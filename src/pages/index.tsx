@@ -1,16 +1,17 @@
 import { useState } from "react";
-import Head from "src/components/vendor/next/Head";
-import Topbar from "../components/topbar/Topbar";
-import Intro from "../components/intro/Intro";
-import Projets from "../components/projets/Projets";
-import CV from "src/components/cv/CV";
-// import Contact from "../components/contact/Contact";
-import Menu from "../components/menu/Menu";
+import Head from "../components/vendor/next/Head";
+import Topbar from "../components/navigations/topbar/Topbar";
+import Menu from "../components/navigations/menu/Menu";
+import Intro from "../components/sections/intro/Intro";
+import Projets from "../components/sections/projets/Projets";
+import CV from "../components/sections/cv/CV";
+import Contact from "../components/sections/contact/Contact";
+import Modal from "../components/vendor/modal/Modal";
 
 export default function App() {
    const [menuOpen, setMenuOpen] = useState(false);
    return (
-      <>
+      <div>
          <Head description="Portfolio de Sam Duhaime, développeur web à Montréal, Québec, Canada. Réalisez une application web." />
 
          <Topbar
@@ -21,11 +22,14 @@ export default function App() {
             menuOpen={menuOpen}
             setMenuOpen={setMenuOpen}
          />
-         <div style={{ marginTop: "70px" }} />
-         <Intro />
-         <Projets />
-         <CV />
-         {/* <Contact /> */}
-      </>
+
+         <div style={{ marginTop: "70px" }}>
+            <Intro />
+            <Projets />
+            <CV />
+            <Contact />
+            <Modal />
+         </div>
+      </div>
    );
 }

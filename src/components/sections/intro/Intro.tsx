@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Typewriter from "typewriter-effect";
 import { AppContext } from "src/hooks/useContext/AppContext";
-import Image from "../vendor/next/Image";
+import Image from "../../vendor/next/Image";
 import Styles from "./intro.module.scss";
 
 export default function Intro() {
@@ -10,7 +10,6 @@ export default function Intro() {
    return (
       <div
          className={Styles.intro}
-         id="introduction"
       >
          <div className={Styles.left}>
             <div className={Styles.imgContainer}>
@@ -18,7 +17,7 @@ export default function Intro() {
                   src="/assets/images/sam-duhaime.png"
                   alt="Samuel Duhaime-Morissette"
                   height="600"
-                  width="500"
+                  width="600"
                />
             </div>
          </div>

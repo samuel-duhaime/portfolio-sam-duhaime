@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import { StrictMode } from "react";
-import ContextConteneur from "src/components/conteneur/context/ContextConteneur";
+import ContextConteneur from "src/components/conteneurs/context/ContextConteneur";
 import "../styles/global.scss";
 
 export default function App({ Component, pageProps }: AppProps) {

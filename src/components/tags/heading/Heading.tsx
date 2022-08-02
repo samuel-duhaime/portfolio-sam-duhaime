@@ -8,7 +8,7 @@ type HeadingProps = {
 
 export default function Heading({ Tag, text, textAlign = "left" }: HeadingProps) {
    return (
-      <span className={Styles.heading}>
+      <span className={Styles.heading} id={text}>
          <Tag style={{ textAlign: textAlign }}>{text}</Tag>
       </span>
    );

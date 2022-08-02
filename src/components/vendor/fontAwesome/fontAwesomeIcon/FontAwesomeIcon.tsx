@@ -2,13 +2,14 @@ import { FontAwesomeIcon as FontAwesomeIconReact } from "@fortawesome/react-font
 import {
    faMoon,
    faSun,
+   faTimes,
+   faRobot,
    // faHeart,
    // faArrowAltCircleDown,
    // faFilter,
    // faTh,
    // faList,
    // faStar,
-   // faTimes,
    // faPlus,
    // faMinus,
    // faUserCircle,
@@ -79,7 +80,15 @@ export default function FontAwesomeIcon({ icon, color, onMouseEnter, onMouseLeav
          onMouseLeave={onMouseLeave}
          onClick={onClick}
          icon={
-            icon === "faMoon" ? faMoon : faSun ? faSun : faMoon
+            icon === "faMoon"
+               ? faMoon
+               : icon === "faSun"
+               ? faSun
+               : icon === "faTimes"
+               ? faTimes
+               : icon === "faRobot"
+               ? faRobot
+               : faMoon
             // icon === "faHeart"
             //    ? faHeart
             //    : icon === "faArrowAltCircleDown"
@@ -100,8 +109,6 @@ export default function FontAwesomeIcon({ icon, color, onMouseEnter, onMouseLeav
             //    ? faInstagram
             //    : icon === "faPinterest"
             //    ? faPinterest
-            //    : icon === "faTimes"
-            //    ? faTimes
             //    : icon === "faPlus"
             //    ? faPlus
             //    : icon === "faMinus"

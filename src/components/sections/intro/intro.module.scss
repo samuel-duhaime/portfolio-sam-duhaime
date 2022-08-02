@@ -1,5 +1,5 @@
-@import "../../styles/_1-variables.module";
-@import "../../styles/_2-mixins.module";
+@import "../../../styles/_1-variables.module";
+@import "../../../styles/_2-mixins.module";
 
 .intro {
    display: flex;
@@ -33,11 +33,10 @@
          }
 
          img {
-            height: 50%;
-            object-fit: cover;
+            object-fit: contain;
 
             @include computer {
-               border-radius: 0 0 32% 35%;
+               border-radius: 50%;
             }
          }
       }

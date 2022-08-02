@@ -1,0 +1,92 @@
+@import "../../../styles/_1-variables.module.scss";
+@import "../../../styles/_2-mixins.module.scss";
+
+// TODO: Corriger le SCSS
+.contact {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+
+   .questionsSupplementaires {
+      display: inline-block;
+      position: relative;
+      margin: 20px 0;
+      cursor: pointer;
+      color: #3e79e9;
+      
+      // Ajouter une ligne animé
+      &:after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         transform: scaleX(0);
+         height: 1px;
+         bottom: 0;
+         left: 0;
+         background-color: #3e79e9;
+         transform-origin: bottom right;
+         transition: transform 0.25s ease-out;
+      }
+
+      // Ajouter une ligne animé
+      &:hover:after {
+         transform: scaleX(1);
+         transform-origin: bottom left;
+      }
+   }
+
+   form {
+      width: 360px;
+      margin: 0 auto;
+      box-shadow: var(--boxShadow);
+      border-radius: 10px;
+      padding: 20px;
+
+      select {
+         width: 100%;
+         margin: 15px 0;
+         padding: 10px 5px;
+         border: none;
+         border-bottom: 1px solid black;
+         cursor: pointer;
+      }
+
+      input[type="text"] {
+         width: 100%;
+         margin: 15px 0;
+         padding: 10px 5px;
+         border: none;
+         border-bottom: 1px solid black;
+
+         &::placeholder {
+            color: #333333;
+         }
+      }
+
+      textarea {
+         width: 100%;
+         margin: 15px 0;
+         padding: 10px 5px;
+         border: none;
+         border-bottom: 1px solid black;
+
+         &::placeholder {
+            color: #333333;
+         }
+      }
+
+      button {
+         width: 100%;
+         min-height: 40px;
+         border-radius: 10px;
+         background-color: $mainColor;
+         color: white;
+         cursor: pointer;
+
+         &:hover,
+         &:focus {
+            filter: brightness(150%);
+         }
+      }
+   }
+}

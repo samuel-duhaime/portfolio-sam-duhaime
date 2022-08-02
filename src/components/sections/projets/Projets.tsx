@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "src/hooks/useContext/AppContext";
-import Image from "../vendor/next/Image";
-import Heading from "../texte/heading/Heading";
+import Image from "../../vendor/next/Image";
+import Heading from "../../tags/heading/Heading";
 import Styles from "./projets.module.scss";
 
 export default function Portfolio() {
@@ -32,7 +32,6 @@ export default function Portfolio() {
    return (
       <div
          className={Styles.projets}
-         id="projets"
       >
          <Heading
             Tag="h2"

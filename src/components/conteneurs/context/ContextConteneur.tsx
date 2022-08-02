@@ -14,6 +14,7 @@ export default function ContextConteneur({ children }: ContextConteneurProps) {
       const root = document.documentElement;
       root?.style.setProperty("--darkModeBackgroundColor", darkMode ? "black" : "white");
       root?.style.setProperty("--darkModeTextColor", darkMode ? "white" : "black");
+      root?.style.setProperty("--boxShadow", darkMode ? "0 1px 5px 0 white" : "0 1px 5px 0 rgba(0, 0, 0, 0.25)");
    }, [darkMode]);
 
    // Activer ou désactiver le dark mode

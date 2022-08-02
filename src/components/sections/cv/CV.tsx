@@ -1,16 +1,15 @@
 import { useContext } from "react";
 import { AppContext } from "src/hooks/useContext/AppContext";
-import Heading from "../texte/heading/Heading";
-import Liste from "../conteneur/liste/Liste";
+import Heading from "../../tags/heading/Heading";
+import Liste from "../../conteneurs/liste/Liste";
 import Styles from "./cv.module.scss";
-import CodeConteneur from "../conteneur/codeConteneur/CodeConteneur";
+import CodeConteneur from "../../conteneurs/codeConteneur/CodeConteneur";
 
 export default function CV() {
    const { langue } = useContext(AppContext);
    return (
       <div
          className={Styles.cv}
-         id="cv"
       >
          <Heading
             Tag="h2"

@@ -1,0 +1,96 @@
+@import "../../../styles/_1-variables.module";
+
+// Contenu du modal
+.modalContent {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   right: auto;
+   bottom: auto;
+   width: 360px;
+   padding: 20px;
+   box-shadow: var(--boxShadow);
+   border-radius: 10px;
+   background-color: var(--darkModeBackgroundColor);
+   transform: translate(-50%, -50%);
+
+   .topChat {
+      display: flex;
+      width: 100%;
+
+      .circlePhoto {
+         background-color: #d9d9d9;
+         width: 50px;
+         height: 50px;
+         border-radius: 50px;
+         margin-right: 20px;
+
+         img {
+            border-radius: 50px;
+            object-fit: contain;
+         }
+      }
+
+      .close {
+         margin-left: auto;
+         float: right;
+
+         svg {
+            font-size: 20px;
+            cursor: pointer;
+
+            &:hover {
+               transform: scale(1.2);
+            }
+         }
+      }
+   }
+
+   .robotMessage,
+   .clientMessage {
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px 0;
+   }
+
+   .robotMessage {
+      background-color: #d9d9d9;
+      margin-right: 30px;
+      color: black;
+   }
+
+   .clientMessage {
+      background-color: $mainColor;
+      color: white;
+      margin-left: 30px;
+      cursor: pointer;
+   }
+}
+
+// Background de l'application lors du modal
+.modalOverlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1000;
+   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.robotButton {
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   width: 50px;
+   height: 50px;
+   background-color: $mainColor;
+   color: white;
+   border-radius: 50px;
+   border: none;
+   cursor: pointer;
+
+   svg {
+      font-size: 25px;
+   }
+}
