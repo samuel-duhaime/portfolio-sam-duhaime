@@ -1,5 +1,4 @@
-node_modules
-.next
-.swc
-build
-next-env.d.ts 
+# Client
+client/node_modules
+client/.next
+client/build
