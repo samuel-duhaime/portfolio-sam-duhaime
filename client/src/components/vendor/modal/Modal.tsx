@@ -39,7 +39,7 @@ export default function Modal() {
             <div className={Styles.topChat}>
                <div className={Styles.circlePhoto}>
                   <Image
-                     src="/assets/images/sam-duhaime.png"
+                     src="/assets/images/photos/sam-duhaime.png"
                      alt="Samuel Duhaime-Morissette"
                      height="50"
                      width="50"
@@ -66,9 +66,7 @@ export default function Modal() {
             <div className={Styles.clientMessage}>J`aimerais vous offrir un emploi</div>
             <div className={Styles.clientMessage}>J`aimerais discuter d`un projet</div>
             <div className={Styles.robotMessage}>Nous sommes toujours heureux de discuter d'un nouveau projet</div>
-            <div className={Styles.robotMessage}>
-               Envoyez la description de votre projet à mon maître
-            </div>
+            <div className={Styles.robotMessage}>Envoyez la description de votre projet à mon maître</div>
          </ReactModal>
       </>
    );

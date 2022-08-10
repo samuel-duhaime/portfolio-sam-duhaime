@@ -22,6 +22,7 @@
          .logoText {
             font-size: 40px;
             font-weight: 700px;
+            font-family: $firstFontFamily;
             text-decoration: none;
             color: inherit;
 
@@ -47,7 +48,7 @@
 
                &:hover,
                &:focus {
-                  color: blue;
+                  color: #3e79e9;
                }
             }
          }
@@ -59,7 +60,7 @@
 
             &:hover,
             &:focus {
-               color: blue;
+               color: #3e79e9;
             }
          }
 

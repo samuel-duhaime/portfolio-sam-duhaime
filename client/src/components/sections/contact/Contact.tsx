@@ -29,12 +29,12 @@ export default function Contact() {
             <select
                name="serviceInteresse"
                required
+               defaultValue=""
             >
                <option
                   className={Styles.disabled}
-                  // value="——"
+                  value=""
                   disabled
-                  selected
                >
                   Service intéressé...
                </option>

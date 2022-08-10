@@ -12,7 +12,7 @@ export default function App() {
    const [menuOpen, setMenuOpen] = useState(false);
    return (
       <div>
-         <Head description="Portfolio de Sam Duhaime, développeur web à Montréal, Québec, Canada. Réalisez une application web." />
+         <Head title="Développeur web" description="Portfolio de Sam Duhaime, développeur web à Montréal, Québec, Canada. Réalisez une application web." />
 
          <Topbar
             menuOpen={menuOpen}

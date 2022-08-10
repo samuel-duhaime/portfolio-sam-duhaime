@@ -1,0 +1,31 @@
+@import "../../../styles/_1-variables.module";
+
+.imageSelectionnee {
+   display: flex;
+   justify-content: space-around;
+
+   .sections {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      div {
+         cursor: pointer;
+         padding: 6px 10px;
+         border-radius: 10px;
+
+         &.active,
+         &:hover,
+         &:focus {
+            background-color: $secondColor;
+            color: white;
+         }
+      }
+   }
+
+   .imageContainer {
+      img {
+         border-radius: 10px;
+      }
+   }
+}

@@ -10,29 +10,27 @@ export default function Portfolio() {
       {
          id: 1,
          title: "Écolio",
-         img: "/assets/images/sam-duhaime.png",
+         img: "/assets/images/photos/sam-duhaime.png",
       },
       {
          id: 2,
          title: "LocoMotion",
-         img: "/assets/images/sam-duhaime.png",
+         img: "/assets/images/photos/sam-duhaime.png",
       },
       {
          id: 3,
          title: "Projet personnel",
-         img: "/assets/images/sam-duhaime.png",
+         img: "/assets/images/photos/sam-duhaime.png",
       },
       {
          id: 4,
          title: "AirBnb clone",
-         img: "/assets/images/sam-duhaime.png",
+         img: "/assets/images/photos/sam-duhaime.png",
       },
    ];
 
    return (
-      <div
-         className={Styles.projets}
-      >
+      <div className={Styles.projets}>
          <Heading
             Tag="h2"
             text={langue === "fr" ? "Projets" : "Projects"}

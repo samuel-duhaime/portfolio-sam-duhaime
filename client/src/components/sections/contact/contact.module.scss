@@ -13,7 +13,7 @@
       margin: 20px 0;
       cursor: pointer;
       color: #3e79e9;
-      
+
       // Ajouter une ligne animé
       &:after {
          content: "";
@@ -49,6 +49,17 @@
          border: none;
          border-bottom: 1px solid black;
          cursor: pointer;
+
+         // -webkit-appearance: menulist-button;
+         // color: blue;
+
+         .disabled {
+            color: #333333;
+         }
+
+         // &:invalid {
+         //    color: red;
+         // }
       }
 
       input[type="text"] {

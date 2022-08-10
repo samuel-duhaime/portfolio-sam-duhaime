@@ -8,13 +8,11 @@ export default function Intro() {
    const { langue } = useContext(AppContext);
 
    return (
-      <div
-         className={Styles.intro}
-      >
+      <div className={Styles.intro}>
          <div className={Styles.left}>
             <div className={Styles.imgContainer}>
                <Image
-                  src="/assets/images/sam-duhaime.png"
+                  src="/assets/images/photos/sam-duhaime.png"
                   alt="Samuel Duhaime-Morissette"
                   height="600"
                   width="600"
@@ -23,20 +21,23 @@ export default function Intro() {
          </div>
          <div className={Styles.right}>
             <div className={Styles.wrapper}>
-               <h1>
-                  Sam Duhaime <br />
+               <div className={Styles.titre}>
+                  <h1>Sam Duhaime</h1>
                   {langue === "fr" ? (
                      <>
-                        <div className={Styles.red}>Développeur web</div>
-                        <Typewriter
-                           options={{
-                              wrapperClassName: Styles.red,
-                              cursorClassName: Styles.cursor,
-                              strings: ["Full-stack", "Frontend", "Backend"],
-                              autoStart: true,
-                              loop: true,
-                           }}
-                        />
+                        <h2 className={Styles.red}>
+                           Développeur web
+                           <Typewriter
+                              options={{
+                                 wrapperClassName: Styles.red,
+                                 cursorClassName: Styles.cursor,
+                                 strings: ["Full-stack", "Frontend", "Backend"],
+                                 autoStart: true,
+                                 loop: true,
+                              }}
+                           />
+                        </h2>
+
                         <div className={Styles.small}>
                            <br />
                            Montréal, Québec
@@ -44,23 +45,26 @@ export default function Intro() {
                      </>
                   ) : (
                      <>
-                        <Typewriter
-                           options={{
-                              wrapperClassName: Styles.red,
-                              cursorClassName: Styles.cursor,
-                              strings: ["Full-stack", "Frontend", "Backend"],
-                              autoStart: true,
-                              loop: true,
-                           }}
-                        />
-                        <div className={Styles.red}>Web developer</div>
+                        <h2 className={Styles.red}>
+                           <Typewriter
+                              options={{
+                                 wrapperClassName: Styles.red,
+                                 cursorClassName: Styles.cursor,
+                                 strings: ["Full-stack", "Frontend", "Backend"],
+                                 autoStart: true,
+                                 loop: true,
+                              }}
+                           />
+                           Web developer
+                        </h2>
+
                         <div className={Styles.small}>
                            <br />
                            Montreal, Quebec
                         </div>
                      </>
                   )}
-               </h1>
+               </div>
             </div>
          </div>
       </div>

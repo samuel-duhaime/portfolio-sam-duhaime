@@ -16,7 +16,7 @@ export default function Topbar({ menuOpen, setMenuOpen }: TopBarProps) {
          <div className={Styles.wrapper}>
             <div className={Styles.left}>
                <a
-                  href="#intro"
+                  href="#"
                   className={Styles.logoText}
                >
                   Sam<span className={Styles.red}>.</span>

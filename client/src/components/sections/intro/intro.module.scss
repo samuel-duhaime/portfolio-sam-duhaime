@@ -59,9 +59,11 @@
             align-items: unset;
          }
 
-         h1 {
-            font-size: 46px;
-
+         .titre {
+            h1 {
+               font-size: 46px;
+            }
+            
             .red {
                font-size: 40px;
                color: $secondColor;
@@ -69,7 +71,7 @@
 
             .small {
                font-size: 30px;
-               font-weight: 400;
+               font-family: $secondFontFamily;
             }
 
             .cursor {

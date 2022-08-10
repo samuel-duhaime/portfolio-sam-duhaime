@@ -24,12 +24,19 @@
          .right {
             width: calc(100% - 185px - 40px);
 
-            .description {
-               .descriptionTitre {
-                  display: flex;
-                  justify-content: space-between;
+            .descriptions {
+               .description {
+
+                  // Side by side
+                  + .description {
+                     margin-top: 40px;
+                  }
+
+                  .descriptionTitre {
+                     display: flex;
+                     justify-content: space-between;
+                  }
                }
-               
             }
          }
       }
