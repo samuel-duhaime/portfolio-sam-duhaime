@@ -6,3 +6,10 @@
       @content;
    }
 }
+
+// Pour un media plus petit que 
+@mixin forMinWidth($media) {
+   @media (min-width: $media) {
+      @content;
+   }
+}

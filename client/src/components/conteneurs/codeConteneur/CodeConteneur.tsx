@@ -72,7 +72,7 @@ export default function CodeConteneur() {
             {codeArray.map(({ id, textArray, margin }: codeArrayProps) => {
                return (
                   <div key={id}>
-                     <span style={{ color: "white", marginRight: "30px" }}>{id}</span>
+                     <span className={Styles.chiffre}>{id}</span>
                      <span style={{ marginLeft: margin }}>
                         {/* Texte du code */}
                         {textArray.map(({ textId, color, text }: textArrayProps) => {

@@ -1,20 +1,26 @@
 import Styles from "./liste.module.scss";
 
-type ImageTexteProps = {
+type ListeProps = {
    liArray: {
       text: string;
       id: number;
    }[];
    Tag?: "ul" | "ol";
    type?: "1" | "A";
+   checkListe?: boolean;
 };
 
-export default function Ul({ liArray, Tag = "ul", type }: ImageTexteProps) {
+export default function Liste({ liArray, Tag = "ul", type, checkListe = false }: ListeProps) {
    return (
       <div className={Styles.liste}>
          <Tag type={type}>
             {liArray.map(({ text, id }) => (
-               <li key={id}>{text}</li>
+               <li
+                  key={id}
+                  className={checkListe ? Styles.checkListe : ""}
+               >
+                  {text}
+               </li>
             ))}
          </Tag>
       </div>

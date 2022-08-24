@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Head from "../components/vendor/next/Head";
-import Topbar from "../components/navigations/topbar/Topbar";
+import Topbar from "../components/navigations/topnav/Topnav";
 import Menu from "../components/navigations/menu/Menu";
 import Intro from "../components/sections/intro/Intro";
 import Projets from "../components/sections/projets/Projets";
 import CV from "../components/sections/cv/CV";
 import Contact from "../components/sections/contact/Contact";
-import Modal from "../components/vendor/modal/Modal";
+import Modal from "../components/vendor/modal/ChatBot";
 
 export default function App() {
    const [menuOpen, setMenuOpen] = useState(false);

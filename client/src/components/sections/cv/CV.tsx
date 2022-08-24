@@ -36,6 +36,7 @@ export default function CV() {
                         <div>
                            <Liste
                               Tag="ul"
+                              checkListe={true}
                               liArray={[
                                  {
                                     text: "Fonder Écolio, une plateforme de matériel pédagogique pour le milieu scolaire francophone.",
@@ -73,6 +74,7 @@ export default function CV() {
                         <div>
                            <Liste
                               Tag="ul"
+                              checkListe={true}
                               liArray={[
                                  {
                                     text: "Organiser un projet d'apprentissage du vélo avec Vélo Québec.",
@@ -102,6 +104,7 @@ export default function CV() {
                         <div>
                            <Liste
                               Tag="ul"
+                              checkListe={true}
                               liArray={[
                                  {
                                     text: "Superviser une équipe de sept stagiaires pendant 3 mois en Bolivie afin de réaliser un projet de participation citoyenne.",
@@ -139,6 +142,7 @@ export default function CV() {
                         <div>
                            <Liste
                               Tag="ul"
+                              checkListe={true}
                               liArray={[
                                  {
                                     text: "Adapter l`enseignement en fonction des besoins individualisés des élèves de 5 à 21 ans ayant un handicap physique et mental.",
@@ -185,6 +189,7 @@ export default function CV() {
                         <div>
                            <Liste
                               Tag="ul"
+                              checkListe={true}
                               liArray={[
                                  {
                                     text: "Obtenir une mention d'excellence.",
@@ -208,6 +213,7 @@ export default function CV() {
                         <div>
                            <Liste
                               Tag="ul"
+                              checkListe={true}
                               liArray={[
                                  {
                                     text: "Organiser la course à relais de Québec à Montréal du Grand défi Pierre Lavoie de l'Université Laval en recoltant plus de 6 000$.",

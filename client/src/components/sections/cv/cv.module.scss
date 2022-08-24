@@ -1,3 +1,5 @@
+@import "../../../styles/_2-mixins.module.scss";
+
 .cv {
    max-width: 1200px;
    padding: 20px;
@@ -9,11 +11,20 @@
 
       .section {
          display: flex;
+         flex-direction: column;
          width: 100%;
          margin: 20px 0;
 
+         @include computer {
+            flex-direction: row;
+         }
+
          .left {
-            width: 185px;
+            width: 100%;
+
+            @include computer {
+               width: 185px;
+            }
 
             h3 {
                position: sticky;
@@ -22,11 +33,14 @@
          }
 
          .right {
-            width: calc(100% - 185px - 40px);
+            width: 100%;
+
+            @include computer {
+               width: calc(100% - 185px - 40px);
+            }
 
             .descriptions {
                .description {
-
                   // Side by side
                   + .description {
                      margin-top: 40px;
@@ -34,7 +48,12 @@
 
                   .descriptionTitre {
                      display: flex;
+                     flex-direction: column;
                      justify-content: space-between;
+                     
+                     @include forMinWidth(1100px) {
+                        flex-direction: row;
+                     }
                   }
                }
             }

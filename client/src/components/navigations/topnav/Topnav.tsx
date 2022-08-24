@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import { AppContext } from "src/hooks/useContext/AppContext";
 import FontAwesomeIcon from "../../vendor/fontAwesome/fontAwesomeIcon/FontAwesomeIcon";
-import Styles from "./topbar.module.scss";
+import Styles from "./topnav.module.scss";
 
 type TopBarProps = {
    menuOpen: boolean;
    setMenuOpen: any;
 };
 
-export default function Topbar({ menuOpen, setMenuOpen }: TopBarProps) {
+export default function TopNav({ menuOpen, setMenuOpen }: TopBarProps) {
    const { darkMode, toggleDarkMode, langue, toggleLangue } = useContext(AppContext);
 
    return (
