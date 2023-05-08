@@ -1,6 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
 // import Script from "next/script";
 
+// TODO: Delete when finishing migrating app folder
 // Configuration de toutes les pages
 export default function Document() {
    return (

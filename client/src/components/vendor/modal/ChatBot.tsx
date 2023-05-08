@@ -51,8 +51,8 @@ export default function ChatBot() {
                   <Image
                      src="/assets/images/photos/sam-duhaime.png"
                      alt="Samuel Duhaime-Morissette"
-                     height="50"
-                     width="50"
+                     height={50}
+                     width={50}
                   />
                </div>
                <div>

@@ -3,8 +3,8 @@ import ImageNext from "next/image";
 type ImageProps = {
    src: string;
    alt?: string;
-   width: string;
-   height: string;
+   width: number;
+   height: number;
    layout?: "fill";
    placeholder?: "empty" | "blur";
    priority?: boolean;
