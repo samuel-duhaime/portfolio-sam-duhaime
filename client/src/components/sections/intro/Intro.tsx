@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Typewriter from "typewriter-effect";
-import { AppContext } from "src/hooks/useContext/AppContext";
+import { AppContext } from "src/components/conteneurs/context/AppContext";
 import Image from "../../vendor/next/Image";
 import Styles from "./intro.module.scss";
 
@@ -23,8 +23,26 @@ export default function Intro() {
         <div className={Styles.wrapper}>
           <div className={Styles.titre}>
             <h1>Samuel Duhaime</h1>
-            {langue === "fr" ? (
+            {langue === "en" ? (
               <>
+                <h2 className={Styles.red}>
+                  <Typewriter
+                    options={{
+                      wrapperClassName: Styles.red,
+                      cursorClassName: Styles.cursor,
+                      strings: ["Full Stack", "Frontend", "Backend"],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                  Web developer
+                </h2>
+
+                <div className={Styles.small}>Montreal, Quebec</div>
+              </>
+            ) : (
+              <>
+                {" "}
                 <h2 className={Styles.red}>
                   Développeur web
                   <Typewriter
@@ -37,31 +55,7 @@ export default function Intro() {
                     }}
                   />
                 </h2>
-
-                <div className={Styles.small}>
-                  <br />
-                  Montréal, Québec
-                </div>
-              </>
-            ) : (
-              <>
-                <h2 className={Styles.red}>
-                  <Typewriter
-                    options={{
-                      wrapperClassName: Styles.red,
-                      cursorClassName: Styles.cursor,
-                      strings: ["Full-stack", "Frontend", "Backend"],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
-                  Web developer
-                </h2>
-
-                <div className={Styles.small}>
-                  <br />
-                  Montreal, Quebec
-                </div>
+                <div className={Styles.small}>Montréal, Québec</div>
               </>
             )}
           </div>

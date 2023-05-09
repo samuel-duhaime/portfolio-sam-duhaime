@@ -1,106 +1,128 @@
 @import "../../../styles/_1-variables.module";
 
 .topbar {
-   width: 100%;
-   height: 70px;
-   padding: 0 20px;
-   position: fixed;
-   top: 0;
-   z-index: 3;
-   transition: all 0.3s ease;
-   background-color: var(--darkModeBackgroundColor);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  transition: all 0.3s ease;
+  background-color: var(--darkModeBackgroundColor);
+  opacity: 0.8;
 
-   .wrapper {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 60px;
+    height: 60px;
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: auto;
+
+    .left {
       display: flex;
       align-items: center;
-      justify-content: space-between;
 
-      .left {
-         display: flex;
-         align-items: center;
+      .logoText {
+        font-size: 40px;
+        font-family: var(--titleFontFamily);
+        text-decoration: none;
+        color: inherit;
 
-         .logoText {
-            font-size: 40px;
-            font-weight: 700px;
-            font-family: $firstFontFamily;
-            text-decoration: none;
-            color: inherit;
+        .red {
+          font-size: 40px;
+          font-weight: 700px;
+          color: $secondColor;
+        }
+      }
+    }
 
-            .red {
-               font-size: 46px;
-               color: $secondColor;
-            }
-         }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--darkModeTextColor);
+
+      .langue {
+        &.menuOpen {
+          color: white;
+        }
+
+        button {
+          color: var(--darkModeTextColor);
+          background-color: transparent;
+          border-radius: 10px;
+          border: none;
+          font-size: 16px;
+          cursor: pointer;
+
+          &.active {
+            text-decoration: underline;
+          }
+
+          &.menuOpen {
+            color: white;
+          }
+
+          &:hover,
+          &:focus-visible {
+            color: #3e79e9;
+          }
+        }
       }
 
-      .right {
-         display: flex;
+      .displayIcone {
+        font-size: 25px;
+        cursor: pointer;
 
-         .langue {
-            margin-right: 16px;
+        &.menuOpen {
+          color: white;
+        }
 
-            span {
-               cursor: pointer;
-
-               &.active {
-                  text-decoration: underline;
-               }
-
-               &:hover,
-               &:focus {
-                  color: #3e79e9;
-               }
-            }
-         }
-
-         .displayIcone {
-            margin-right: 16px;
-            font-size: 25px;
-            cursor: pointer;
-
-            &:hover,
-            &:focus {
-               color: #3e79e9;
-            }
-         }
-
-         .hamburger {
-            width: 40px;
-            height: 32px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            cursor: pointer;
-
-            span {
-               width: 100%;
-               height: 3px;
-               background-color: var(--darkModeTextColor);
-               transform-origin: left;
-               transition: all 0.3s ease;
-            }
-         }
+        &:hover,
+        &:focus {
+          color: #3e79e9;
+        }
       }
-   }
-
-   &.active {
-      background-color: $mainColor;
-      color: white;
 
       .hamburger {
-         span {
-            &:first-child {
-               background-color: white;
-               transform: rotate(45deg);
-            }
-            &:nth-child(2) {
-               opacity: 0;
-            }
-            &:last-child {
-               background-color: white;
-               transform: rotate(-45deg);
-            }
-         }
+        width: 32.5px;
+        height: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+        span {
+          height: 3.5px;
+          background-color: var(--darkModeTextColor);
+          transform-origin: left;
+          transition: all 0.3s ease;
+        }
       }
-   }
+    }
+  }
+
+  &.active {
+    background-color: $mainColor;
+    color: white;
+    opacity: 1;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
 }

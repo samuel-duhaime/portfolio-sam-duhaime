@@ -1,21 +1,28 @@
 /* Tout le site */
 * {
-   font-size: 100%;
-   font-family: $secondFontFamily;
-   box-sizing: border-box;
-   line-height: 150%;
+  font-size: 100%;
+  font-family: var(--secondFontFamily);
+  box-sizing: border-box;
+  line-height: 150%;
+}
+
+// Default root before useEffect of darkMode
+:root {
+  --darkModeBackgroundColor: white;
+  --darkModeTextColor: black;
+  --boxShadow: "0 1px 5px 0 rgba(0, 0, 0, 0.25)";
 }
 
 /* Tout le HTML */
 html {
-   scroll-padding-top: $menuHeight; // Ajuster au top menu
+  scroll-padding-top: $menuHeight; // Ajuster au top menu
 }
 
 /* Mettre la logique pour le dark mode */
 body {
-   background-color: var(--darkModeBackgroundColor);
-   color: var(--darkModeTextColor);
-   transition: all 0.3s ease;
+  background-color: var(--darkModeBackgroundColor);
+  color: var(--darkModeTextColor);
+  transition: all 0.3s ease;
 }
 
 /* Tous les titres */
@@ -25,6 +32,6 @@ h3,
 h4,
 h5,
 h6 {
-   font-family: $firstFontFamily;
-   font-weight: 700;
+  font-family: var(--firstFontFamily);
+  font-weight: 700;
 }

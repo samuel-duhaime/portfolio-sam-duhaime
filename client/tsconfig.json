@@ -1,26 +1,45 @@
 {
-   "compilerOptions": {
-      "target": "es6", // Déclarer le language utilisé
-      "lib": ["dom", "dom.iterable", "esnext"],
-      "allowJs": true, // Permettre javascript
-      "skipLibCheck": true,
-      "strict": true, // Utiliser toutes les options de vérification
-      // "noImplicitAny": true // Écrire une erreur lorsque any type
-      "allowSyntheticDefaultImports": true, // Permettre l'utilisation lorqu'il n'y pas de default export
-      "forceConsistentCasingInFileNames": true, // Vérifier que les imports sont bien écrits
-      "noEmit": true,
-      "noEmitOnError": true, // Ne pas build si erreur avec typescript
-      "incremental": true,
-      "esModuleInterop": true,
-      "removeComments": true,
-      "module": "esnext", // Spécifier le module généré
-      "moduleResolution": "node", // Spécifier comment typescript trouve un module
-      "resolveJsonModule": true, // Permettre l'importartion de json
-      "isolatedModules": true,
-      "outDir": "build", // Dossier pour construire
-      "jsx": "preserve",
-      "baseUrl": ".",
-   },
-   "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", "src/components/sections/intro/Accueil.jsx", "src/pages/indesrc/components/conteneurs/context/ContextConteneur.tsxeneusrc/components/conteneurs/codeConteneur/CodeConteneur.tsxeneur.tsx"], // Inclure durant la compilation
-   "exclude": ["node_modules", "build/**/*"] // Exclure durant la compilation
+  "compilerOptions": {
+    "target": "es6", // Déclarer le language utilisé
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true, // Permettre javascript
+    "skipLibCheck": true,
+    "strict": true, // Utiliser toutes les options de vérification
+    // "noImplicitAny": true // Écrire une erreur lorsque any type
+    "allowSyntheticDefaultImports": true, // Permettre l'utilisation lorqu'il n'y pas de default export
+    "forceConsistentCasingInFileNames": true, // Vérifier que les imports sont bien écrits
+    "noEmit": true,
+    "noEmitOnError": true, // Ne pas build si erreur avec typescript
+    "incremental": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "module": "esnext", // Spécifier le module généré
+    "moduleResolution": "node", // Spécifier comment typescript trouve un module
+    "resolveJsonModule": true, // Permettre l'importartion de json
+    "isolatedModules": true,
+    "outDir": "build", // Dossier pour construire
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    "src/components/sections/intro/Accueil.jsx",
+    "src/pages/indesrc/components/conteneurs/context/ContextConteneur.tsxeneusrc/components/conteneurs/codeConteneur/CodeConteneur.tsxeneur.tsx",
+    "build/types/**/*.ts"
+  ], // Inclure durant la compilation
+  "exclude": [
+    "node_modules",
+    "build/**/*"
+  ] // Exclure durant la compilation
 }

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AppContext } from "src/hooks/useContext/AppContext";
+import { AppContext } from "src/components/conteneurs/context/AppContext";
 import Image from "../../vendor/next/Image";
 import Heading from "../../tags/heading/Heading";
 import Styles from "./projets.module.scss";
