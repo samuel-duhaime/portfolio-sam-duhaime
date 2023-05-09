@@ -1,31 +1,45 @@
 import { useContext } from "react";
 import { AppContext } from "src/components/conteneurs/context/AppContext";
-import Image from "../../vendor/next/Image";
 import Heading from "../../tags/heading/Heading";
 import Styles from "./projets.module.scss";
 
 export default function Portfolio() {
   const { langue } = useContext(AppContext);
-  const data = [
+  const projects = [
     {
       id: 1,
       title: "Écolio",
-      img: "/assets/images/photos/sam-duhaime.png",
+      description: "👩‍🏫 Marketplace for Teachers",
+      videoSrc: "/assets/videos/ecolio-trailer.mp4",
+      link: "https://ecolio.ca",
     },
     {
       id: 2,
-      title: "LocoMotion",
-      img: "/assets/images/photos/sam-duhaime.png",
+      title: "Sketch",
+      description: "🎨 Canva clone for Teachers",
+      videoSrc: "/assets/videos/sketch-trailer.mp4",
+      link: "https://github.com/samuel-duhaime/sketch",
     },
     {
       id: 3,
-      title: "Projet personnel",
-      img: "/assets/images/photos/sam-duhaime.png",
+      title: "SportsSavvy",
+      description: "🏀 E-commerce for Sports Technologies",
+      videoSrc: "/assets/videos/sportsSavvy-trailer.mp4",
+      link: "https://github.com/samuel-duhaime/sportssavvy",
     },
     {
       id: 4,
-      title: "AirBnb clone",
-      img: "/assets/images/photos/sam-duhaime.png",
+      title: "Critter",
+      description: "🐦 Twitter Clone",
+      videoSrc: "/assets/videos/critter-trailer.mp4",
+      link: "https://github.com/samuel-duhaime/critter",
+    },
+    {
+      id: 5,
+      title: "Alien Shooter",
+      description: "🎮 Video Game with JavaScript",
+      videoSrc: "/assets/videos/alien-shooter-trailer.mp4",
+      link: "https://github.com/samuel-duhaime/alien-shooter",
     },
   ];
 
@@ -33,23 +47,31 @@ export default function Portfolio() {
     <div className={Styles.projets}>
       <Heading
         Tag="h2"
-        text={langue === "fr" ? "Projets" : "Projects"}
+        text={langue === "en" ? "Projects" : "Projets"}
         textAlign="center"
       />
-      <div className={Styles.ProjetsContainer}>
-        {data.map((data: { id: number; img: string; title: string }) => (
-          <div
+      <div className={Styles.projetsContainer}>
+        {projects.map((project: { id: number; title: string; description: string; videoSrc: string; link: string }) => (
+          <a
+            key={project.id}
             className={Styles.projet}
-            key={data.id}
+            href={project.link}
+            target="_blank"
           >
-            <Image
-              src={data.img}
-              alt={data.title}
-              height={200}
-              width={200}
+            <video
+              src={project.videoSrc}
+              title={project.title}
+              preload="auto"
+              autoPlay
+              muted
+              loop
+              playsInline
             />
-            <h3>{data.title}</h3>
-          </div>
+            <div className={Styles.projectInfo}>
+              <h3>{project.title}</h3>
+              <div>{project.description}</div>
+            </div>
+          </a>
         ))}
       </div>
     </div>

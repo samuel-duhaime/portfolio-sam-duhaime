@@ -16,6 +16,7 @@ export default function Intro() {
             alt="Samuel Duhaime-Morissette"
             height={600}
             width={600}
+            priority={true}
           />
         </div>
       </div>
