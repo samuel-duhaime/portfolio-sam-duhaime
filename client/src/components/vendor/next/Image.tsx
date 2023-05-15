@@ -5,7 +5,6 @@ type ImageProps = {
    alt?: string;
    width: number;
    height: number;
-   layout?: "fill";
    placeholder?: "empty" | "blur";
    priority?: boolean;
    onClick?: () => void;
@@ -16,7 +15,6 @@ export default function Image({
    alt = "",
    width,
    height,
-   layout,
    placeholder = "empty",
    priority = false,
    onClick,
@@ -28,7 +26,6 @@ export default function Image({
          alt={alt}
          width={width}
          height={height}
-         layout={layout}
          placeholder={placeholder} // "blur" || "empty"
          priority={priority} // true | False
          onClick={onClick}

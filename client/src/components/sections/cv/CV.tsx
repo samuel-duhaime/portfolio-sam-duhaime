@@ -2,8 +2,8 @@ import { useContext } from "react";
 import { AppContext } from "src/components/conteneurs/context/AppContext";
 import Heading from "../../tags/heading/Heading";
 import Liste from "../../conteneurs/liste/Liste";
-import CodeConteneur from "../../conteneurs/codeConteneur/CodeConteneur";
-import ImageSelectionnee from "../../conteneurs/imageSelectionnee/ImageSelectionnee";
+// import CodeConteneur from "../../conteneurs/codeConteneur/CodeConteneur";
+// import ImageSelectionnee from "../../conteneurs/imageSelectionnee/ImageSelectionnee";
 import Styles from "./cv.module.scss";
 
 export default function CV() {
@@ -20,7 +20,7 @@ export default function CV() {
           <div className={Styles.left}>
             <Heading
               Tag="h3"
-              text="Travail"
+              text="Work experience"
             />
           </div>
           <div className={Styles.right}>
@@ -29,9 +29,9 @@ export default function CV() {
               <div className={Styles.description}>
                 <div className={Styles.descriptionTitre}>
                   <div>
-                    <strong>Écolio | Fondateur et CEO</strong>
+                    <strong>Founder & Full Stack Web Developer | Écolio </strong>
                   </div>
-                  <div>Automne 2020 - aujourd'hui</div>
+                  <div>Fall 2020 - present</div>
                 </div>
                 <div>
                   <Liste
@@ -39,53 +39,15 @@ export default function CV() {
                     checkListe={true}
                     liArray={[
                       {
-                        text: "Fonder Écolio, une plateforme de matériel pédagogique pour le milieu scolaire francophone.",
+                        text: "Developed a marketplace, registering and onboarding 200+ users, 30+ shops, and 50+ products since launch.",
                         id: 1,
                       },
                       {
-                        text: "Programmer de manière autodidacte une application web avec React, NextJs, Sass, TypeScript, NodeJs et Figma.",
+                        text: "Planned project milestones and priorities, conducted user interviews for prototype development, and wrote concise, structured, secure, and scalable code.",
                         id: 2,
                       },
                       {
-                        text: "Recevoir une subvention de 25 000$ de l'École des entrepreneurs du Québec.",
-                        id: 3,
-                      },
-                      {
-                        text: "Écrire le plan d'affaires avec une mention d'excellence.",
-                        id: 4,
-                      },
-                      {
-                        text: "Présenter une conférence sur l'entrepreneuriat devant le CJE (Carrefour jeunesse-emploi Ahuntsic).",
-                        id: 5,
-                      },
-                    ]}
-                  />
-                </div>
-              </div>
-
-              {/* Éducation physique */}
-              <div className={Styles.description}>
-                <div className={Styles.descriptionTitre}>
-                  <div>
-                    <strong>CSSDM | Enseignant en éducation physique</strong>
-                  </div>
-                  <div>Hiver 2021</div>
-                </div>
-                <div>
-                  <Liste
-                    Tag="ul"
-                    checkListe={true}
-                    liArray={[
-                      {
-                        text: "Organiser un projet d'apprentissage du vélo avec Vélo Québec.",
-                        id: 1,
-                      },
-                      {
-                        text: "Enseigner l'éducation physique aux élèves de la deuxième à la sixième année du primaire.",
-                        id: 2,
-                      },
-                      {
-                        text: "Co-enseigner plusieurs groupes avec une autre enseignante en éducation physique.",
+                        text: "Secured $25,000 funding from École des entrepreneurs du Québec.",
                         id: 3,
                       },
                     ]}
@@ -93,13 +55,13 @@ export default function CV() {
                 </div>
               </div>
 
-              {/* Québec Sans Frontières */}
+              {/* Teacher */}
               <div className={Styles.description}>
                 <div className={Styles.descriptionTitre}>
                   <div>
-                    <strong>Québec Sans Frontières | Responsable d'équipe</strong>
+                    <strong>Teacher | Peter Hall School & CSSDM</strong>
                   </div>
-                  <div>Hiver 2019 - Automne 2019</div>
+                  <div>2017 to 2019, 2021</div>
                 </div>
                 <div>
                   <Liste
@@ -107,37 +69,29 @@ export default function CV() {
                     checkListe={true}
                     liArray={[
                       {
-                        text: "Superviser une équipe de sept stagiaires pendant 3 mois en Bolivie afin de réaliser un projet de participation citoyenne.",
+                        text: "Collaborated with school team professionals and parents.",
                         id: 1,
                       },
                       {
-                        text: "Planifier et animer une formation prédépart d`une vingtaine d`heures pour les participants stagiaires.",
+                        text: "Planned objectives and intervention plans for students with disabilities.",
                         id: 2,
                       },
                       {
-                        text: "Élaborer le cadre logique et l`échéancier du projet en collaboration avec les partenaires boliviens et canadiens.",
+                        text: "Managed crises and unforeseen events.",
                         id: 3,
-                      },
-                      {
-                        text: "Concevoir et animer une dizaine d`ateliers et réaliser 4 courts métrages avec la collaboration d`un comité de jeunes Boliviens.",
-                        id: 4,
-                      },
-                      {
-                        text: "Gérer le budget de 15 000 $ du stage.",
-                        id: 5,
                       },
                     ]}
                   />
                 </div>
               </div>
 
-              {/* Éducation physique */}
+              {/* Quebec without Borders */}
               <div className={Styles.description}>
                 <div className={Styles.descriptionTitre}>
                   <div>
-                    <strong>École Peter Hall | Enseignant en éducation spécialisée</strong>
+                    <strong>Project Manager & Team Leader | Quebec without Borders </strong>
                   </div>
-                  <div>Automne 2017 - Hiver 2019</div>
+                  <div>2019 - 2020</div>
                 </div>
                 <div>
                   <Liste
@@ -145,20 +99,16 @@ export default function CV() {
                     checkListe={true}
                     liArray={[
                       {
-                        text: "Adapter l`enseignement en fonction des besoins individualisés des élèves de 5 à 21 ans ayant un handicap physique et mental.",
+                        text: "Led and trained a team of seven interns for three months in Bolivia, and managed a $15,000 internship budget.",
                         id: 1,
                       },
                       {
-                        text: "Développer les élèves en collaborant avec les parents et l'équipe-école.",
+                        text: "Wrote a grant application of $50,000 to the Ministry of International Relations for an international solidarity project in Bolivia.",
                         id: 2,
                       },
                       {
-                        text: "Organiser des évènements au comité social, au club de lecture et au comité d`Halloween.",
+                        text: "Developed project's logical framework and timeline in collaboration with Bolivian and Canadian partners.",
                         id: 3,
-                      },
-                      {
-                        text: "Élaborer les objectifs, les plans d`interventions et les profils éducatifs personnalisés des élèves.",
-                        id: 4,
                       },
                     ]}
                   />
@@ -167,22 +117,25 @@ export default function CV() {
             </div>
           </div>
         </div>
+
+        {/* Education */}
         <div className={Styles.section}>
           <div className={Styles.left}>
             <Heading
               Tag="h3"
-              text="Éducation"
+              text="Education"
             />
           </div>
+
           <div className={Styles.right}>
             <div className={Styles.descriptions}>
-              {/* HEC */}
+              {/* Concordia University */}
               <div className={Styles.description}>
                 <div className={Styles.descriptionTitre}>
                   <div>
-                    <strong>HEC Montréal | Attestation d'études en conception de projets entrepreneuriaux</strong>
+                    <strong>Concordia University | Diploma in Full-Stack Web Development</strong>
                   </div>
-                  <div>Automne 2020</div>
+                  <div>2023</div>
                 </div>
                 <div>
                   <Liste
@@ -190,23 +143,29 @@ export default function CV() {
                     checkListe={true}
                     liArray={[
                       {
-                        text: "Obtenir une mention d'excellence.",
+                        text: "Completed an intensive Full Stack Development Bootcamp that focused on modern Web Development technologies including JavaScript, React, Node.js, HTML, and CSS.",
                         id: 1,
+                      },
+                      {
+                        text: " Led a team project to develop an e-commerce website using collaborative tools such as Figma, GitHub, and Trello, showcasing effective project management and teamwork skills.",
+                        id: 2,
+                      },
+                      {
+                        text: "Developed solo projects within tight deadlines, including a Canva clone, Twitter clone, flight ticket application, and a JavaScript game.",
+                        id: 3,
                       },
                     ]}
                   />
                 </div>
               </div>
 
-              {/* Université Laval */}
+              {/* HEC */}
               <div className={Styles.description}>
                 <div className={Styles.descriptionTitre}>
                   <div>
-                    <strong>
-                      Université Laval | Baccalauréat en enseignement de l'éducation physique et à la santé
-                    </strong>
+                    <strong>HEC Montreal | Certificate of Studies in Entrepreneurial Project Design</strong>
                   </div>
-                  <div>2016 - 2020</div>
+                  <div>2020</div>
                 </div>
                 <div>
                   <Liste
@@ -214,8 +173,42 @@ export default function CV() {
                     checkListe={true}
                     liArray={[
                       {
-                        text: "Organiser la course à relais de Québec à Montréal du Grand défi Pierre Lavoie de l'Université Laval en recoltant plus de 6 000$.",
+                        text: "Developed and delivered a pitch showcasing effective communication skills in presenting the project to stakeholders.",
                         id: 1,
+                      },
+                      {
+                        text: "Planned and executed an entrepreneurial project, demonstrating skills in project planning, coordination, and communication.",
+                        id: 2,
+                      },
+                      {
+                        text: "Designed a comprehensive business strategy for a marketplace project, incorporating market research, competitive analysis, and financial planning.",
+                        id: 3,
+                      },
+                    ]}
+                  />
+                </div>
+              </div>
+
+              {/* Laval University */}
+              <div className={Styles.description}>
+                <div className={Styles.descriptionTitre}>
+                  <div>
+                    <strong>Laval University | Bachelor's degree in Health and Physical Education</strong>
+                  </div>
+                  <div>2020</div>
+                </div>
+                <div>
+                  <Liste
+                    Tag="ul"
+                    checkListe={true}
+                    liArray={[
+                      {
+                        text: "Developed and implemented instructional materials and strategies for teaching physical education, health, and fitness concepts, showcasing effective communication skills.",
+                        id: 1,
+                      },
+                      {
+                        text: "Managed classroom environments and maintained discipline, creating a positive and inclusive learning environment conducive to student success.",
+                        id: 2,
                       },
                     ]}
                   />
@@ -224,7 +217,9 @@ export default function CV() {
             </div>
           </div>
         </div>
-        <div className={Styles.section}>
+
+        {/* Hard skills */}
+        {/* <div className={Styles.section}>
           <div className={Styles.left}>
             <Heading
               Tag="h3"
@@ -234,8 +229,10 @@ export default function CV() {
           <div className={Styles.right}>
             <CodeConteneur />
           </div>
-        </div>
-        <div className={Styles.section}>
+        </div> */}
+
+        {/* Tools */}
+        {/* <div className={Styles.section}>
           <div className={Styles.left}>
             <Heading
               Tag="h3"
@@ -245,7 +242,7 @@ export default function CV() {
           <div className={Styles.right}>
             <ImageSelectionnee />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

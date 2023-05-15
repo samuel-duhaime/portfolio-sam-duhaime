@@ -11,6 +11,7 @@ export default function TopNav({ menuOpen, setMenuOpen }: { menuOpen: boolean; s
   return (
     <div className={Styles.topbar + (menuOpen ? " " + Styles.active : "")}>
       <div className={Styles.wrapper}>
+        {/* Logo */}
         <div className={Styles.left}>
           <Link
             href="/"
@@ -19,8 +20,10 @@ export default function TopNav({ menuOpen, setMenuOpen }: { menuOpen: boolean; s
             Sam<span className={Styles.red}>.</span>
           </Link>
         </div>
+
         <div className={Styles.right}>
-          <div className={`${Styles.langue} ${menuOpen && Styles.menuOpen}`}>
+          {/* Languages */}
+          {/* <div className={`${Styles.langue} ${menuOpen && Styles.menuOpen}`}>
             <button
               className={`${menuOpen && Styles.menuOpen} ${langue === "fr" && Styles.active}`}
               onClick={toggleLangue}
@@ -34,10 +37,11 @@ export default function TopNav({ menuOpen, setMenuOpen }: { menuOpen: boolean; s
             >
               en
             </button>
-          </div>
+          </div> */}
+
           <div className={`${Styles.displayIcone} ${menuOpen && Styles.menuOpen}`}>
             <FontAwesomeIcon
-              icon={darkMode === true ? "faSun" : "faMoon"}
+              icon={darkMode ? "faSun" : "faMoon"}
               onClick={toggleDarkMode}
             />
           </div>

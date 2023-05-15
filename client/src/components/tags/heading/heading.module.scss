@@ -2,15 +2,15 @@
 @import "../../../styles/_2-mixins.module";
 
 .heading {
-   h2 {
-      font-size: 30px;
+  h2 {
+    font-size: 30px;
 
-      @include computer {
-         font-size: 50px;
-      }
-   }
+    @include computer {
+      font-size: 50px;
+    }
+  }
 
-   h3 {
-      font-size: 20px;
-   }
+  h3 {
+    font-size: 20px;
+  }
 }

@@ -6,8 +6,8 @@ import Menu from "../components/navigations/menu/Menu";
 import Intro from "../components/sections/intro/Intro";
 import Projets from "../components/sections/projets/Projets";
 import CV from "../components/sections/cv/CV";
-import Contact from "../components/sections/contact/Contact";
-import Modal from "../components/vendor/modal/ChatBot";
+// import Contact from "../components/sections/contact/Contact";
+// import Modal from "../components/vendor/modal/ChatBot";
 
 // HomePage
 export default function HomePage() {
@@ -26,8 +26,8 @@ export default function HomePage() {
       <Intro />
       <Projets />
       <CV />
-      <Contact />
-      <Modal />
+      {/* <Contact /> */}
+      {/* <Modal /> */}
     </div>
   );
 }
