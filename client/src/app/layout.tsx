@@ -1,4 +1,5 @@
 import { ReactNode, StrictMode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Mr_Dafoe, Bitter, Open_Sans } from "next/font/google";
 import { AppProvider } from "src/components/conteneurs/context/AppContext";
@@ -71,7 +72,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           lang="en"
           className={`${mr_dafoe.variable} ${bitter.variable} ${open_sans.variable}`} // Use the variables globaly
         >
-          <body>{children}</body>
+          <body>
+            {children}
+            <Analytics />
+          </body>
         </html>
       </AppProvider>
     </StrictMode>
