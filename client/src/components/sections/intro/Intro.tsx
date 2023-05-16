@@ -8,7 +8,10 @@ export default function Intro() {
   const { langue } = useContext(AppContext);
 
   return (
-    <div className={Styles.intro}>
+    <div
+      className={Styles.intro}
+      id="Intro"
+    >
       <div className={Styles.left}>
         <div className={Styles.imgContainer}>
           <Image

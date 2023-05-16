@@ -6,9 +6,9 @@
   width: 100%;
   height: 60px;
   z-index: 3;
-  transition: all 0.3s ease;
   background-color: var(--darkModeBackgroundColor);
   opacity: 0.8;
+  transition: all 0.3s ease;
 
   .wrapper {
     display: flex;
@@ -73,6 +73,15 @@
       }
 
       .displayIcone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        border: none;
+        background-color: transparent;
+        color: var(--darkModeTextColor);
         font-size: 25px;
         cursor: pointer;
 
@@ -80,18 +89,19 @@
           color: white;
         }
 
-        &:hover,
-        &:focus {
+        &:hover {
           color: #3e79e9;
         }
       }
 
       .hamburger {
-        width: 32.5px;
-        height: 26px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 32.5px;
+        height: 26px;
+        border: none;
+        background-color: transparent;
         cursor: pointer;
 
         span {

@@ -39,19 +39,23 @@ export default function TopNav({ menuOpen, setMenuOpen }: { menuOpen: boolean; s
             </button>
           </div> */}
 
-          <div className={`${Styles.displayIcone} ${menuOpen && Styles.menuOpen}`}>
-            <FontAwesomeIcon
-              icon={darkMode ? "faSun" : "faMoon"}
-              onClick={toggleDarkMode}
-            />
-          </div>
+          {/* Dark mode */}
+          <button
+            type="button"
+            className={`${Styles.displayIcone} ${menuOpen && Styles.menuOpen}`}
+            onClick={toggleDarkMode}
+          >
+            <FontAwesomeIcon icon={darkMode ? "faSun" : "faMoon"} />
+          </button>
+
+          {/* hamburger */}
           <div
             className={Styles.hamburger}
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <span className={Styles.line1}></span>
-            <span className={Styles.line2}></span>
-            <span className={Styles.line3}></span>
+            <span className={Styles.line1} />
+            <span className={Styles.line2} />
+            <span className={Styles.line3} />
           </div>
         </div>
       </div>

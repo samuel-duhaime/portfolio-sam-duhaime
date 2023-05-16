@@ -1,5 +1,6 @@
 import { FontAwesomeIcon as FontAwesomeIconReact } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faTimes, faRobot } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 // Font Awesome Icon
@@ -18,6 +19,12 @@ export default function FontAwesomeIcon({ icon, onClick }: { icon: string; onCli
       iconComponent = faTimes;
     case "faRobot":
       iconComponent = faRobot;
+      break;
+    case "faLinkedin":
+      iconComponent = faLinkedin;
+      break;
+    case "faGithub":
+      iconComponent = faGithub;
       break;
     default:
       iconComponent = faMoon;
