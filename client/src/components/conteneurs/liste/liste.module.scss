@@ -1,18 +1,16 @@
 @import "../../../styles/_1-variables.module.scss";
 
 .liste {
-   :is(ul, ol) {
-      margin: .625rem 0 .625rem 1.25rem;
+  margin: 0.625rem 0 0.625rem 1.25rem;
 
-      li {
-         margin: .3125rem 0;
-      }
+  li {
+    margin: 0.3125rem 0;
+  }
 
-      // Modifier par une icône de check
-      .checkListe {
-         &::marker {
-            content: "✓  ";
-         }
-      }
-   }
+  // Modifier par une icône de check
+  .checkListe {
+    &::marker {
+      content: "✓  ";
+    }
+  }
 }

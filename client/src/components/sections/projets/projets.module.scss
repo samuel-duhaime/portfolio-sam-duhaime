@@ -26,10 +26,14 @@
       cursor: pointer;
 
       video {
-        height: 240px;
+        height: 140px;
         object-fit: cover;
         border-radius: 10px;
         box-shadow: var(--boxShadow);
+
+        @include computer {
+          height: 240px;
+        }
       }
 
       .projectInfo {

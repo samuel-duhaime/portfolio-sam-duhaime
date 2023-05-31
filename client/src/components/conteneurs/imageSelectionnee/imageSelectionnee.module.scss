@@ -2,37 +2,43 @@
 @import "../../../styles/_2-mixins.module";
 
 .imageSelectionnee {
-   display: flex;
-   justify-content: space-around;
+  margin: 10px 0;
+  display: flex;
+  gap: 30px;
 
-   .sections {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+  .sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-      div {
-         cursor: pointer;
-         padding: 6px 10px;
-         border-radius: 10px;
+    button {
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
 
-         &.active,
-         &:hover,
-         &:focus {
-            background-color: $secondColor;
-            color: white;
-         }
+      &.active,
+      &:hover,
+      &:focus {
+        background-color: $secondColor;
+        color: white;
       }
-   }
+    }
+  }
 
-   .imageContainer {
-      margin: auto 0 auto 30px;
+  .imageContainer {
+    margin: auto 0;
+
+    img {
+      object-fit: contain;
+      width: 240px;
+      height: 240px;
+      border-radius: 10px;
 
       @include computer {
-         margin: auto 0;
+        width: 400px;
+        height: 400px;
       }
-
-      img {
-         border-radius: 10px;
-      }
-   }
+    }
+  }
 }

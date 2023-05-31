@@ -3,7 +3,7 @@ import { AppContext } from "src/components/conteneurs/context/AppContext";
 import Heading from "../../tags/heading/Heading";
 import Liste from "../../conteneurs/liste/Liste";
 // import CodeConteneur from "../../conteneurs/codeConteneur/CodeConteneur";
-// import ImageSelectionnee from "../../conteneurs/imageSelectionnee/ImageSelectionnee";
+import ImageSelectionnee from "../../conteneurs/imageSelectionnee/ImageSelectionnee";
 import Styles from "./cv.module.scss";
 
 export default function CV() {
@@ -231,18 +231,122 @@ export default function CV() {
           </div>
         </div> */}
 
-        {/* Tools */}
-        {/* <div className={Styles.section}>
+        {/* Hard skills */}
+        <div className={Styles.section}>
           <div className={Styles.left}>
             <Heading
               Tag="h3"
-              text="Outils"
+              text="Hard skills"
+            />
+          </div>
+          <div className={Styles.right}>
+            <div className={Styles.description}>
+              <Liste
+                Tag="ul"
+                checkListe={true}
+                liArray={[
+                  {
+                    text: "JavaScript, TypeScript",
+                    id: 1,
+                  },
+                  {
+                    text: "React, Next.js, HTML",
+                    id: 2,
+                  },
+                  {
+                    text: "CSS, SASS, Styled Components",
+                    id: 3,
+                  },
+                  {
+                    text: "Node.js, Express, MongoDB, AWS, Docker",
+                    id: 4,
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Tools */}
+        <div className={Styles.section}>
+          <div className={Styles.left}>
+            <Heading
+              Tag="h3"
+              text="Tools"
             />
           </div>
           <div className={Styles.right}>
             <ImageSelectionnee />
           </div>
-        </div> */}
+        </div>
+
+        {/* Soft skills */}
+        <div className={Styles.section}>
+          <div className={Styles.left}>
+            <Heading
+              Tag="h3"
+              text="Soft skills"
+            />
+          </div>
+          <div className={Styles.right}>
+            <div className={Styles.description}>
+              <Liste
+                Tag="ul"
+                checkListe={true}
+                liArray={[
+                  {
+                    text: "Bilingual (French and English)",
+                    id: 1,
+                  },
+                  {
+                    text: "Autonomous and organized",
+                    id: 2,
+                  },
+                  {
+                    text: "Great adaptability",
+                    id: 3,
+                  },
+                  {
+                    text: "Curious",
+                    id: 4,
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Volunteering */}
+        <div className={Styles.section}>
+          <div className={Styles.left}>
+            <Heading
+              Tag="h3"
+              text="Volunteering"
+            />
+          </div>
+          <div className={Styles.right}>
+            <div className={Styles.description}>
+              <Liste
+                Tag="ul"
+                checkListe={true}
+                liArray={[
+                  {
+                    text: "Speaker on entrepreneurship at the Carrefour jeunesse-emploi Ahuntsic (2022).",
+                    id: 1,
+                  },
+                  {
+                    text: "Organizer and facilitator of workshops in Bolivia with Quebec without Borders (2017).",
+                    id: 2,
+                  },
+                  {
+                    text: "Organizer for the Grand Défi Pierre Lavoie with Laval University (2016-2017).",
+                    id: 3,
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

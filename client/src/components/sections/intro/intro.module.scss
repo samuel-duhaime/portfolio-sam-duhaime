@@ -3,48 +3,64 @@
 
 .intro {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   min-height: calc(100vh - 60px);
   max-width: 1240px;
-  // padding: 20px;
   margin: auto;
 
   @include computer {
     flex-direction: unset;
+    flex-direction: row;
     align-items: unset;
   }
 
   .left {
-    flex: 0.5;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding: 20px;
+    padding: 10px;
+
+    @include computer {
+      padding: 20px;
+      flex: 0.5;
+    }
 
     .imgContainer {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 600px;
-      height: 590px;
+      width: 300px;
+      height: 295px;
       background-color: $secondColor;
       border-radius: 50%;
+
+      @include computer {
+        width: 600px;
+        height: 590px;
+      }
 
       img {
         object-fit: contain;
         border-radius: 50%;
-        width: 600px;
-        height: 600px;
+        width: 300px;
+        height: 300px;
         margin-bottom: 10px;
+
+        @include computer {
+          width: 600px;
+          height: 600px;
+        }
       }
     }
   }
 
   .right {
-    flex: 0.5;
+    @include computer {
+      flex: 0.5;
+    }
 
     .wrapper {
       display: flex;
@@ -60,17 +76,30 @@
 
       .titre {
         h1 {
-          font-size: 46px;
+          font-size: 30px;
+          margin: 0 0 10px 0;
+
+          @include computer {
+            font-size: 46px;
+          }
         }
 
         .red {
-          font-size: 40px;
+          font-size: 24px;
           color: $secondColor;
+
+          @include computer {
+            font-size: 40px;
+          }
         }
 
         .small {
-          font-size: 30px;
+          font-size: 16px;
           font-family: var(--secondFontFamily);
+
+          @include computer {
+            font-size: 30px;
+          }
         }
 
         .cursor {

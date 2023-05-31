@@ -17,8 +17,9 @@ export default function Intro() {
           <Image
             src="/assets/images/photos/sam-duhaime.png"
             alt="Samuel Duhaime-Morissette"
-            height={600}
             width={600}
+            height={600}
+            sizes="(min-width: 1000px) 600px, 300px"
             priority={true}
           />
         </div>
@@ -39,7 +40,7 @@ export default function Intro() {
                       loop: true,
                     }}
                   />
-                  Web developer
+                  Web Developer
                 </h2>
 
                 <div className={Styles.small}>Montreal, Quebec</div>
